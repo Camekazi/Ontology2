@@ -1,6 +1,6 @@
 # Dotwork Narrative-to-Ontology Workspace
 
-Transform informal narratives into structured, color-coded ontologies and shareable concept maps. This workspace prevents strategy-execution drift by making relationships between narratives, entities, classifications, and ontologies explicit and queryable.
+Transform informal business narratives into structured, color-coded concept maps following the PRD workflow. This workspace prevents strategy-execution drift by making relationships between narratives, entities, classifications, and ontologies explicit and queryable.
 
 > *"Plans lose their power the moment strategy and execution drift apart."* — John Cutler
 
@@ -8,10 +8,10 @@ Transform informal narratives into structured, color-coded ontologies and sharea
 
 - 🔍 **Entity Extraction**: Extract entities from narratives using NLP (noun-chunks + custom patterns)
 - 🔗 **Relationship Inference**: Infer relationships using linguistic cues and patterns
-- 🏷️ **Classification**: Classify entities using a 10-class taxonomy (TimePeriod, Initiative, Outcome, etc.)
-- 🕸️ **Interactive Visualization**: Generate interactive D3.js network graphs with drag-and-drop, filtering, and real-time exploration
-- 📊 **Multiple Formats**: Export to JSON-LD, GraphML, GEXF, Cytoscape, and Mermaid formats
-- ⚡ **CLI Tools**: End-to-end workflow processing in < 15 minutes
+- 🏷️ **PRD Classification**: Classify entities using the PRD-specified 10-class taxonomy with exact colors
+- 🕸️ **Interactive D3.js Visualization**: Generate interactive concept maps with drag-and-drop, filtering, and real-time exploration
+- 📊 **Streamlined Exports**: Export to JSON-LD, Cytoscape, and CSV formats optimized for D3.js
+- ⚡ **CLI Tools**: End-to-end PRD workflow processing in < 15 minutes
 
 ## Quick Start
 
@@ -32,14 +32,14 @@ npm run cli process path/to/narrative.txt --output results --format cytoscape
 npm run cli demo
 ```
 
-## Implementation Flow
+## PRD Workflow Implementation
 
 ```text
 1. Capture Narrative   – paste, upload or voice-to-text
 2. Find the Things     – entity extraction (noun-chunks + custom tags)
 3. Understand Relations – edge suggestion with linguistic cues
-4. Classify the Things – default taxonomy (Time-Period, Initiative … Principle)
-5. Generate Ontology   – graph + JSON-LD / GraphML export
+4. Classify the Things – PRD taxonomy (Time-Period, Initiative … Principle)
+5. Generate Concept Map – interactive D3.js + JSON-LD / Cytoscape export
 ```
 
 ## Usage
@@ -50,10 +50,10 @@ npm run cli demo
 # Process single narrative with interactive visualization
 npx dotwork-ontology process narrative.txt -o output/ -f cytoscape,json-ld
 
-# Process multiple narratives for network analysis
-npx dotwork-ontology batch narratives/ -o output/ -f gexf,graphml
+# Process multiple narratives for concept mapping
+npx dotwork-ontology batch narratives/ -o output/ -f cytoscape,csv
 
-# Run demo with interactive D3.js network
+# Run demo with interactive D3.js concept map
 npx dotwork-ontology demo -o demo-output/
 ```
 
@@ -72,22 +72,22 @@ const jsonLd = exporter.toJsonLD(result.ontology);
 const graphML = exporter.toGraphML(result.ontology);
 ```
 
-## Default Taxonomy
+## PRD Taxonomy
 
-The system uses a 10-class taxonomy for entity classification:
+The system uses a 10-class taxonomy for entity classification based on the PRD specification:
 
 | Class | Description | Color |
 |-------|-------------|-------|
-| **TimePeriod** | Temporal boundaries (quarters, years, deadlines) | 🔴 |
-| **Initiative** | Strategic programs and organized efforts | 🔵 |
-| **Outcome** | Results, achievements, measurable impacts | 🟢 |
-| **Stakeholder** | People, teams, organizations involved | 🟡 |
-| **Process** | Workflows, procedures, systematic approaches | 🟠 |
-| **Resource** | Assets, tools, budget, capabilities | 🟣 |
-| **Goal** | Objectives, targets, desired states | 🩷 |
-| **Metric** | KPIs and measurements | 🟨 |
-| **Insight** | Learnings, discoveries, key findings | 🔷 |
-| **Principle** | Guiding values, beliefs, strategic directions | ⚪ |
+| **Time Period** | Temporal boundaries (quarters, years, deadlines) | 🩷 Pink |
+| **Cycle Theme** | Recurring themes and seasonal focuses | ⚫ Black |
+| **Initiative** | Strategic programs and organized efforts | 🔵 Light-blue |
+| **Product Capability** | Features, tools, and functional capabilities | 🟣 Slate-blue |
+| **Release Launch** | Product releases and launch activities | 🟪 Lavender |
+| **Customer Segment** | Target audiences and market segments | 🟡 Yellow |
+| **Insight** | Key learnings, discoveries, and understanding | 🟢 Pale-green |
+| **Goal** | Objectives, targets, and desired outcomes | 🟢 Green |
+| **Target** | Specific measurable targets and metrics | 🟠 Coral |
+| **Principle** | Guiding values, beliefs, and methodologies | 🟡 Light-yellow |
 
 ## Project Structure
 
@@ -161,13 +161,14 @@ See the `examples/` directory for sample narratives and their expected ontology 
 
 ## Visualization & Export Formats
 
-### Interactive D3.js Network (Recommended)
-- **Drag-and-drop** node manipulation
-- **Real-time filtering** by entity type
+### Interactive D3.js Concept Maps (Primary Focus)
+- **Drag-and-drop** node manipulation following PRD workflow
+- **Real-time filtering** by PRD taxonomy classes
 - **Hover interactions** with detailed tooltips
 - **Search functionality** to find specific entities
 - **Physics-based layouts** for natural clustering
-- **Color-coded nodes** by taxonomy classification
+- **Color-coded nodes** by PRD taxonomy classification
+- **Two templates**: `d3-network-standalone.html` and `prd-workflow-template.html`
 
 ### Cytoscape.js Format
 ```json
@@ -203,10 +204,10 @@ See the `examples/` directory for sample narratives and their expected ontology 
 }
 ```
 
-### Professional Network Analysis
-- **GraphML** for yEd, Gephi, NetworkX
-- **GEXF** for advanced network analysis
-- **Mermaid** for documentation and simple diagrams
+### Additional Export Formats
+- **JSON-LD** for semantic web applications
+- **CSV** for spreadsheet analysis (nodes and edges files)
+- **Cytoscape.js** for programmatic network visualization
 
 ## Contributing
 

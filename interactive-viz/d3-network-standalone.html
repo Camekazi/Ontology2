@@ -196,13 +196,16 @@
                 <label for="filter-type">Filter by Type:</label>
                 <select id="filter-type">
                     <option value="all">All Types</option>
-                    <option value="stakeholder">Stakeholders</option>
-                    <option value="time-period">Time Periods</option>
-                    <option value="goal">Goals</option>
-                    <option value="outcome">Outcomes</option>
-                    <option value="initiative">Initiatives</option>
-                    <option value="process">Processes</option>
-                    <option value="insight">Insights</option>
+                    <option value="time-period">Time Period</option>
+                    <option value="cycle-theme">Cycle Theme</option>
+                    <option value="initiative">Initiative</option>
+                    <option value="product-capability">Product Capability</option>
+                    <option value="release-launch">Release Launch</option>
+                    <option value="customer-segment">Customer Segment</option>
+                    <option value="insight">Insight</option>
+                    <option value="goal">Goal</option>
+                    <option value="target">Target</option>
+                    <option value="principle">Principle</option>
                 </select>
             </div>
             
@@ -213,36 +216,44 @@
         
         <div class="legend">
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #96CEB4;"></div>
-                <span>Stakeholders</span>
+                <div class="legend-color" style="background-color: #FFC0CB;"></div>
+                <span>Time Period</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #FF6B6B;"></div>
-                <span>Time Periods</span>
+                <div class="legend-color" style="background-color: #000000;"></div>
+                <span>Cycle Theme</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #FFB6C1;"></div>
-                <span>Goals</span>
+                <div class="legend-color" style="background-color: #ADD8E6;"></div>
+                <span>Initiative</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #45B7D1;"></div>
-                <span>Outcomes</span>
+                <div class="legend-color" style="background-color: #6A5ACD;"></div>
+                <span>Product Capability</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #4ECDC4;"></div>
-                <span>Initiatives</span>
+                <div class="legend-color" style="background-color: #E6E6FA;"></div>
+                <span>Release Launch</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #FFEAA7;"></div>
-                <span>Processes</span>
+                <div class="legend-color" style="background-color: #FFFF00;"></div>
+                <span>Customer Segment</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #87CEEB;"></div>
-                <span>Insights</span>
+                <div class="legend-color" style="background-color: #98FB98;"></div>
+                <span>Insight</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background-color: #DDA0DD;"></div>
-                <span>Resources</span>
+                <div class="legend-color" style="background-color: #00FF00;"></div>
+                <span>Goal</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FF7F50;"></div>
+                <span>Target</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FFFFE0;"></div>
+                <span>Principle</span>
             </div>
         </div>
         
@@ -256,19 +267,19 @@
     </div>
 
     <script>
-        // Color mapping for different entity types
+        // PRD Color mapping for taxonomy classes
         const colorMap = {
-            'stakeholder': '#96CEB4',
-            'time-period': '#FF6B6B', 
-            'goal': '#FFB6C1',
-            'outcome': '#45B7D1',
-            'initiative': '#4ECDC4',
-            'process': '#FFEAA7',
-            'insight': '#87CEEB',
-            'resource': '#DDA0DD',
-            'metric': '#F0E68C',
-            'principle': '#D3D3D3',
-            'Entity': '#cccccc'
+            'time-period': '#FFC0CB',       // Pink
+            'cycle-theme': '#000000',       // Black
+            'initiative': '#ADD8E6',        // Light-blue
+            'product-capability': '#6A5ACD', // Slate-blue
+            'release-launch': '#E6E6FA',    // Lavender
+            'customer-segment': '#FFFF00',  // Yellow
+            'insight': '#98FB98',           // Pale-green
+            'goal': '#00FF00',              // Green
+            'target': '#FF7F50',            // Coral
+            'principle': '#FFFFE0',         // Light-yellow
+            'Entity': '#cccccc'             // Default gray
         };
 
         // Your narrative data (embedded from the processing results)

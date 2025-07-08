@@ -3,83 +3,83 @@ import { Taxonomy, TaxonomyClass } from './types';
 export const DEFAULT_TAXONOMY_CLASSES: TaxonomyClass[] = [
   {
     id: 'time-period',
-    name: 'TimePeriod',
+    name: 'Time Period',
     description: 'Temporal boundaries and timeframes (quarters, years, deadlines)',
-    color: '#FF6B6B',
-    keywords: ['quarter', 'year', 'month', 'week', 'deadline', 'timeline', 'period', 'fiscal', 'H1', 'H2', 'Q1', 'Q2', 'Q3', 'Q4'],
+    color: '#FFC0CB', // Pink
+    keywords: ['quarter', 'year', 'month', 'week', 'deadline', 'timeline', 'period', 'fiscal', 'H1', 'H2', 'Q1', 'Q2', 'Q3', 'Q4', 'last quarter'],
     patterns: ['\\d{4}', 'Q[1-4]', 'H[12]', 'last \\w+', 'next \\w+', 'this \\w+', '\\w+ quarter']
+  },
+  {
+    id: 'cycle-theme',
+    name: 'Cycle Theme',
+    description: 'Recurring themes and seasonal focuses across time periods',
+    color: '#000000', // Black
+    keywords: ['growth', 'expansion', 'focus', 'theme', 'cycle', 'seasonal', 'efforts', 'push'],
+    patterns: ['\\w+ efforts', '\\w+ focus', '\\w+ theme', '\\w+ cycle']
   },
   {
     id: 'initiative',
     name: 'Initiative',
     description: 'Strategic programs, projects, and organized efforts',
-    color: '#4ECDC4',
-    keywords: ['project', 'program', 'initiative', 'effort', 'campaign', 'rollout', 'launch', 'implementation'],
-    patterns: ['\\w+ project', '\\w+ program', '\\w+ initiative', 'rollout of \\w+', 'launch of \\w+']
+    color: '#ADD8E6', // Light-blue
+    keywords: ['improving', 'initiative', 'effort', 'campaign', 'program', 'project', 'improving the \\w+'],
+    patterns: ['improving \\w+', 'initiative to \\w+', 'effort to \\w+', 'program for \\w+']
   },
   {
-    id: 'outcome',
-    name: 'Outcome',
-    description: 'Results, achievements, and measurable impacts',
-    color: '#45B7D1',
-    keywords: ['result', 'outcome', 'achievement', 'impact', 'success', 'improvement', 'increase', 'decrease', 'growth'],
-    patterns: ['\\d+% \\w+', 'improved \\w+', 'increased \\w+', 'reduced \\w+', 'achieved \\w+']
+    id: 'product-capability',
+    name: 'Product Capability',
+    description: 'Features, tools, and functional capabilities of the product',
+    color: '#6A5ACD', // Slate-blue
+    keywords: ['AI-powered', 'insights', 'feature', 'capability', 'functionality', 'tool', 'platform'],
+    patterns: ['AI-powered \\w+', '\\w+ feature', '\\w+ capability', '\\w+ functionality']
   },
   {
-    id: 'stakeholder',
-    name: 'Stakeholder',
-    description: 'People, teams, and organizations involved',
-    color: '#96CEB4',
-    keywords: ['team', 'user', 'customer', 'client', 'stakeholder', 'manager', 'engineer', 'designer', 'analyst'],
-    patterns: ['\\w+ team', '\\w+ users', '\\w+ customers', '\\w+ stakeholders']
+    id: 'release-launch',
+    name: 'Release Launch',
+    description: 'Product releases, deployments, and launch activities',
+    color: '#E6E6FA', // Lavender
+    keywords: ['rollout', 'launch', 'release', 'deployment', 'go-live', 'ship'],
+    patterns: ['rollout of \\w+', 'launch of \\w+', 'release of \\w+', 'deployment of \\w+']
   },
   {
-    id: 'process',
-    name: 'Process',
-    description: 'Workflows, procedures, and systematic approaches',
-    color: '#FFEAA7',
-    keywords: ['process', 'workflow', 'procedure', 'methodology', 'approach', 'system', 'framework'],
-    patterns: ['\\w+ process', '\\w+ workflow', '\\w+ procedure', '\\w+ methodology']
-  },
-  {
-    id: 'resource',
-    name: 'Resource',
-    description: 'Assets, tools, budget, and capabilities',
-    color: '#DDA0DD',
-    keywords: ['budget', 'tool', 'technology', 'platform', 'resource', 'asset', 'capability', 'infrastructure'],
-    patterns: ['\\$\\d+', '\\w+ tool', '\\w+ platform', '\\w+ technology']
-  },
-  {
-    id: 'goal',
-    name: 'Goal',
-    description: 'Objectives, targets, and desired states',
-    color: '#FFB6C1',
-    keywords: ['goal', 'objective', 'target', 'aim', 'vision', 'mission', 'purpose', 'intent'],
-    patterns: ['goal of \\w+', 'objective to \\w+', 'target of \\w+', 'aim to \\w+']
-  },
-  {
-    id: 'metric',
-    name: 'Metric',
-    description: 'Key performance indicators and measurements',
-    color: '#F0E68C',
-    keywords: ['metric', 'KPI', 'measurement', 'indicator', 'score', 'rate', 'ratio', 'percentage'],
-    patterns: ['\\w+ rate', '\\w+ score', '\\w+ metric', '\\w+ KPI', '\\d+%']
+    id: 'customer-segment',
+    name: 'Customer Segment',
+    description: 'Target audiences, customer groups, and market segments',
+    color: '#FFFF00', // Yellow
+    keywords: ['customers', 'users', 'segment', 'market', 'audience', 'B2B', 'SaaS', 'enterprise', 'mid-sized'],
+    patterns: ['customers in \\w+', '\\w+ customers', '\\w+ users', '\\w+ segment']
   },
   {
     id: 'insight',
     name: 'Insight',
-    description: 'Learnings, discoveries, and key findings',
-    color: '#87CEEB',
-    keywords: ['insight', 'learning', 'discovery', 'finding', 'observation', 'trend', 'pattern', 'analysis'],
-    patterns: ['learned that \\w+', 'discovered \\w+', 'found that \\w+', 'insight into \\w+']
+    description: 'Key learnings, discoveries, and understanding gained',
+    color: '#98FB98', // Pale-green
+    keywords: ['see value', 'insight', 'learning', 'discovery', 'understanding', 'realize', 'quickly'],
+    patterns: ['see \\w+ quickly', 'insight into \\w+', 'learned that \\w+', 'discovered \\w+']
+  },
+  {
+    id: 'goal',
+    name: 'Goal',
+    description: 'Objectives, targets, and desired outcomes to achieve',
+    color: '#00FF00', // Green
+    keywords: ['reduce', 'goal', 'objective', 'target', 'aim', 'resolve tickets', 'time to'],
+    patterns: ['reduce \\w+', 'goal to \\w+', 'objective to \\w+', 'aim to \\w+', 'reduce the time']
+  },
+  {
+    id: 'target',
+    name: 'Target',
+    description: 'Specific measurable targets and metrics to hit',
+    color: '#FF7F50', // Coral
+    keywords: ['reduction', 'churn', 'target', 'metric', 'KPI', 'achieve', 'hit'],
+    patterns: ['reduction in \\w+', 'target of \\w+', 'achieve \\w+', 'hit \\w+']
   },
   {
     id: 'principle',
     name: 'Principle',
-    description: 'Guiding values, beliefs, and strategic directions',
-    color: '#D3D3D3',
-    keywords: ['principle', 'value', 'belief', 'strategy', 'direction', 'philosophy', 'approach', 'mindset'],
-    patterns: ['principle of \\w+', 'value of \\w+', 'belief in \\w+', 'strategy of \\w+']
+    description: 'Guiding values, beliefs, and methodological approaches',
+    color: '#FFFFE0', // Light-yellow
+    keywords: ['iterate', 'validate', 'principle', 'approach', 'methodology', 'belief', 'value'],
+    patterns: ['iterate and \\w+', 'validate \\w+', 'principle of \\w+', 'approach to \\w+']
   }
 ];
 

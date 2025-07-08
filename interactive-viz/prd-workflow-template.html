@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotwork Concept Map - PRD Workflow</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 18px;
+        }
+        
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .control-group label {
+            font-weight: 500;
+            color: #495057;
+            font-size: 14px;
+        }
+        
+        .control-group input, .control-group select {
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .workflow-steps {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .workflow-steps h3 {
+            margin: 0 0 15px 0;
+            color: #495057;
+            font-size: 16px;
+        }
+        
+        .steps {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .step {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .legend {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .legend h3 {
+            margin: 0 0 15px 0;
+            color: #495057;
+            font-size: 16px;
+        }
+        
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            background: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        }
+        
+        #network {
+            width: 100%;
+            height: 700px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .info-panel {
+            padding: 20px;
+            background: white;
+        }
+        
+        .info-panel h3 {
+            margin: 0 0 10px 0;
+            color: #495057;
+        }
+        
+        .info-panel p {
+            margin: 5px 0;
+            color: #6c757d;
+        }
+        
+        .node {
+            cursor: pointer;
+            stroke: #fff;
+            stroke-width: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .node:hover {
+            stroke-width: 3px;
+            filter: brightness(1.1);
+        }
+        
+        .link {
+            fill: none;
+            stroke: #999;
+            stroke-opacity: 0.4;
+            stroke-width: 1.5px;
+            transition: all 0.3s ease;
+        }
+        
+        .link:hover {
+            stroke-opacity: 0.8;
+            stroke-width: 2.5px;
+        }
+        
+        .node-label {
+            font-size: 12px;
+            fill: #333;
+            text-anchor: middle;
+            pointer-events: none;
+            font-weight: 500;
+        }
+        
+        .link-label {
+            font-size: 10px;
+            fill: #666;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+        
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 300px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .highlighted {
+            stroke: #ff6b6b !important;
+            stroke-width: 4px !important;
+        }
+        
+        .connected {
+            stroke: #4ecdc4 !important;
+            stroke-width: 3px !important;
+        }
+        
+        .faded {
+            opacity: 0.2;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+        }
+        
+        .file-drop-zone {
+            border: 2px dashed #ced4da;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .file-drop-zone.dragover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .file-drop-zone input[type="file"] {
+            display: none;
+        }
+        
+        .file-drop-zone label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .file-drop-zone label:hover {
+            background: #5a6fd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Dotwork Concept Map</h1>
+            <p>Transform business narratives into interactive concept maps using the PRD workflow</p>
+        </div>
+        
+        <div class="workflow-steps">
+            <h3>📋 PRD Workflow Steps</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <span>Capture Narrative</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <span>Find the Things</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <span>Understand Relations</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <span>Classify the Things</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <span>Generate Concept Map</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="file-drop-zone" id="fileDropZone">
+            <p>📄 <strong>Load your .cytoscape.json file</strong></p>
+            <p>Drag and drop your processed narrative file here, or click to browse</p>
+            <label for="fileInput">Choose File</label>
+            <input type="file" id="fileInput" accept=".json">
+        </div>
+        
+        <div class="controls" id="controls" style="display: none;">
+            <div class="control-group">
+                <label for="force-strength">Force Strength:</label>
+                <input type="range" id="force-strength" min="10" max="500" value="200">
+            </div>
+            
+            <div class="control-group">
+                <label for="node-size">Node Size:</label>
+                <input type="range" id="node-size" min="5" max="25" value="12">
+            </div>
+            
+            <div class="control-group">
+                <label for="filter-type">Filter by Type:</label>
+                <select id="filter-type">
+                    <option value="all">All Types</option>
+                    <option value="time-period">Time Period</option>
+                    <option value="cycle-theme">Cycle Theme</option>
+                    <option value="initiative">Initiative</option>
+                    <option value="product-capability">Product Capability</option>
+                    <option value="release-launch">Release Launch</option>
+                    <option value="customer-segment">Customer Segment</option>
+                    <option value="insight">Insight</option>
+                    <option value="goal">Goal</option>
+                    <option value="target">Target</option>
+                    <option value="principle">Principle</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <input type="text" id="search" placeholder="Search entities...">
+            </div>
+        </div>
+        
+        <div class="legend" id="legend" style="display: none;">
+            <h3>🎨 PRD Taxonomy Classes</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FFC0CB;"></div>
+                    <span><strong>Time Period</strong> - Temporal boundaries</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #000000;"></div>
+                    <span><strong>Cycle Theme</strong> - Recurring themes</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #ADD8E6;"></div>
+                    <span><strong>Initiative</strong> - Strategic programs</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #6A5ACD;"></div>
+                    <span><strong>Product Capability</strong> - Features & tools</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #E6E6FA;"></div>
+                    <span><strong>Release Launch</strong> - Product releases</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FFFF00;"></div>
+                    <span><strong>Customer Segment</strong> - Target audiences</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #98FB98;"></div>
+                    <span><strong>Insight</strong> - Key learnings</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #00FF00;"></div>
+                    <span><strong>Goal</strong> - Objectives to achieve</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FF7F50;"></div>
+                    <span><strong>Target</strong> - Measurable targets</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FFFFE0;"></div>
+                    <span><strong>Principle</strong> - Guiding values</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <p>👆 Please load a .cytoscape.json file to start exploring</p>
+        </div>
+        
+        <svg id="network" style="display: none;"></svg>
+        
+        <div class="info-panel" id="info-panel" style="display: none;">
+            <h3>📊 Network Statistics</h3>
+            <p id="stats"></p>
+            <p><strong>Instructions:</strong> Click and drag nodes to explore • Hover for details • Use controls to filter and adjust • Search to find specific entities</p>
+            <p><strong>PRD Workflow:</strong> This visualization follows the Product Requirements Document workflow for transforming narratives into structured concept maps.</p>
+        </div>
+    </div>
+
+    <script>
+        // PRD Color mapping for taxonomy classes
+        const prdColorMap = {
+            'time-period': '#FFC0CB',    // Pink
+            'cycle-theme': '#000000',    // Black
+            'initiative': '#ADD8E6',     // Light-blue
+            'product-capability': '#6A5ACD',  // Slate-blue
+            'release-launch': '#E6E6FA',  // Lavender
+            'customer-segment': '#FFFF00',  // Yellow
+            'insight': '#98FB98',        // Pale-green
+            'goal': '#00FF00',           // Green
+            'target': '#FF7F50',         // Coral
+            'principle': '#FFFFE0',      // Light-yellow
+            'Entity': '#cccccc'          // Default gray
+        };
+        
+        let networkData = null;
+        let simulation = null;
+        let svg = null;
+        let tooltip = null;
+        let nodes = [];
+        let links = [];
+        
+        // File handling
+        const fileDropZone = document.getElementById('fileDropZone');
+        const fileInput = document.getElementById('fileInput');
+        
+        fileDropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileDropZone.classList.add('dragover');
+        });
+        
+        fileDropZone.addEventListener('dragleave', () => {
+            fileDropZone.classList.remove('dragover');
+        });
+        
+        fileDropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileDropZone.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                loadFile(files[0]);
+            }
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                loadFile(e.target.files[0]);
+            }
+        });
+        
+        function loadFile(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    loadNetworkData(data);
+                } catch (error) {
+                    alert('Error loading file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+        
+        function loadNetworkData(data) {
+            networkData = data;
+            
+            // Show the visualization components
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('controls').style.display = 'flex';
+            document.getElementById('legend').style.display = 'block';
+            document.getElementById('network').style.display = 'block';
+            document.getElementById('info-panel').style.display = 'block';
+            
+            // Process the data
+            processNetworkData();
+            createVisualization();
+        }
+        
+        function processNetworkData() {
+            // Extract nodes and links from Cytoscape format
+            nodes = networkData.elements.filter(el => !el.data.source).map(el => ({
+                id: el.data.id,
+                label: el.data.label,
+                fullText: el.data.label,
+                type: el.data.type || 'Entity',
+                color: prdColorMap[el.data.type] || prdColorMap['Entity']
+            }));
+            
+            links = networkData.elements.filter(el => el.data.source).map(el => ({
+                source: el.data.source,
+                target: el.data.target,
+                label: el.data.label || 'related_to',
+                id: el.data.id
+            }));
+            
+            // Update statistics
+            const stats = document.getElementById('stats');
+            const typeCount = new Set(nodes.map(n => n.type)).size;
+            stats.textContent = `${nodes.length} entities • ${links.length} relationships • ${typeCount} types`;
+        }
+        
+        function createVisualization() {
+            svg = d3.select('#network');
+            const width = 1360;
+            const height = 700;
+            
+            svg.attr('width', width).attr('height', height);
+            svg.selectAll('*').remove(); // Clear previous visualization
+            
+            // Create tooltip
+            tooltip = d3.select('body').append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+            
+            // Create force simulation
+            simulation = d3.forceSimulation(nodes)
+                .force('link', d3.forceLink(links).id(d => d.id).distance(120))
+                .force('charge', d3.forceManyBody().strength(-200))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(18));
+            
+            // Create links
+            const link = svg.append('g')
+                .selectAll('line')
+                .data(links)
+                .enter()
+                .append('line')
+                .attr('class', 'link');
+            
+            // Create link labels
+            const linkLabel = svg.append('g')
+                .selectAll('text')
+                .data(links)
+                .enter()
+                .append('text')
+                .attr('class', 'link-label')
+                .text(d => d.label.replace(/_/g, ' '))
+                .style('opacity', 0);
+            
+            // Create nodes
+            const node = svg.append('g')
+                .selectAll('circle')
+                .data(nodes)
+                .enter()
+                .append('circle')
+                .attr('class', 'node')
+                .attr('r', 12)
+                .attr('fill', d => d.color)
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+            
+            // Create node labels
+            const nodeLabel = svg.append('g')
+                .selectAll('text')
+                .data(nodes)
+                .enter()
+                .append('text')
+                .attr('class', 'node-label')
+                .text(d => d.label.length > 20 ? d.label.substring(0, 20) + '...' : d.label)
+                .attr('dy', 25);
+            
+            // Add interactivity
+            node
+                .on('mouseover', function(event, d) {
+                    tooltip.transition().duration(200).style('opacity', .9);
+                    tooltip.html(`
+                        <strong>${d.fullText}</strong><br/>
+                        Type: ${d.type}<br/>
+                        Classification: ${d.type.replace(/-/g, ' ')}
+                    `)
+                        .style('left', (event.pageX + 10) + 'px')
+                        .style('top', (event.pageY - 28) + 'px');
+                    
+                    highlightConnected(d.id);
+                })
+                .on('mouseout', function(d) {
+                    tooltip.transition().duration(500).style('opacity', 0);
+                    clearHighlight();
+                })
+                .on('click', function(event, d) {
+                    console.log('Clicked:', d);
+                });
+            
+            // Update positions on simulation tick
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+                
+                linkLabel
+                    .attr('x', d => (d.source.x + d.target.x) / 2)
+                    .attr('y', d => (d.source.y + d.target.y) / 2);
+                
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+                
+                nodeLabel
+                    .attr('x', d => d.x)
+                    .attr('y', d => d.y);
+            });
+            
+            // Control event handlers
+            d3.select('#force-strength').on('input', function() {
+                simulation.force('charge').strength(-this.value);
+                simulation.alpha(0.3).restart();
+            });
+            
+            d3.select('#node-size').on('input', function() {
+                node.attr('r', this.value);
+                simulation.force('collision').radius(+this.value + 6);
+                simulation.alpha(0.3).restart();
+            });
+            
+            d3.select('#filter-type').on('change', function() {
+                const selectedType = this.value;
+                if (selectedType === 'all') {
+                    node.style('display', 'block');
+                    nodeLabel.style('display', 'block');
+                } else {
+                    node.style('display', d => d.type === selectedType ? 'block' : 'none');
+                    nodeLabel.style('display', d => d.type === selectedType ? 'block' : 'none');
+                }
+            });
+            
+            d3.select('#search').on('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                node.classed('faded', d => 
+                    searchTerm && !d.fullText.toLowerCase().includes(searchTerm)
+                );
+                nodeLabel.classed('faded', d => 
+                    searchTerm && !d.fullText.toLowerCase().includes(searchTerm)
+                );
+            });
+            
+            // Drag functions
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+            
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+            
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+            
+            // Highlight connected nodes
+            function highlightConnected(nodeId) {
+                const connectedNodes = new Set();
+                links.forEach(link => {
+                    if (link.source.id === nodeId) connectedNodes.add(link.target.id);
+                    if (link.target.id === nodeId) connectedNodes.add(link.source.id);
+                });
+                
+                node.classed('highlighted', d => d.id === nodeId)
+                    .classed('connected', d => connectedNodes.has(d.id))
+                    .classed('faded', d => d.id !== nodeId && !connectedNodes.has(d.id));
+                
+                link.classed('highlighted', d => d.source.id === nodeId || d.target.id === nodeId)
+                    .classed('faded', d => d.source.id !== nodeId && d.target.id !== nodeId);
+                
+                linkLabel.style('opacity', d => 
+                    (d.source.id === nodeId || d.target.id === nodeId) ? 1 : 0
+                );
+            }
+            
+            function clearHighlight() {
+                node.classed('highlighted', false)
+                    .classed('connected', false)
+                    .classed('faded', false);
+                
+                link.classed('highlighted', false)
+                    .classed('faded', false);
+                
+                linkLabel.style('opacity', 0);
+            }
+        }
+    </script>
+</body>
+</html>
