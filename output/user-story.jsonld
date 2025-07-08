@@ -1,0 +1,522 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dotwork": "https://dotwork.com/ontology#",
+    "label": "rdfs:label",
+    "type": "@type",
+    "id": "@id"
+  },
+  "@graph": [
+    {
+      "@id": "dotwork:entity-1751985419451-yh5qldt8g",
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "a belief in customer-first decision",
+      "dotwork:originalSpans": [
+        {
+          "start": 573,
+          "end": 608,
+          "text": "a belief in customer-first decision"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693,
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419451-mjvnwb0s5"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-d1jy2w7sk",
+      "@type": "dotwork:time-period",
+      "rdfs:label": "10,000 monthly active users",
+      "dotwork:originalSpans": [
+        {
+          "start": 738,
+          "end": 765,
+          "text": "10,000 monthly active users"
+        }
+      ],
+      "dotwork:confidence": 0.047619047619047616
+    },
+    {
+      "@id": "dotwork:entity-1751985419450-4mwc9ibc3",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "the onboarding experience,",
+      "dotwork:originalSpans": [
+        {
+          "start": 46,
+          "end": 72,
+          "text": "the onboarding experience,"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419450-65bv4ze4b"
+        },
+        {
+          "@id": "dotwork:entity-1751985419450-ufckv9a2c"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-zv0mlflmp",
+      "@type": "dotwork:time-period",
+      "rdfs:label": "the end of the quarter.",
+      "dotwork:originalSpans": [
+        {
+          "start": 769,
+          "end": 792,
+          "text": "the end of the quarter."
+        }
+      ],
+      "dotwork:confidence": 0.09523809523809523
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-tt8rm5uke",
+      "@type": "dotwork:time-period",
+      "rdfs:label": "the Q3 growth efforts,",
+      "dotwork:originalSpans": [
+        {
+          "start": 155,
+          "end": 177,
+          "text": "the Q3 growth efforts,"
+        }
+      ],
+      "dotwork:confidence": 0.09523809523809523,
+      "dotwork:occurs_during": [
+        {
+          "@id": "dotwork:entity-1751985419451-5zayydq6r"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-mjvnwb0s5",
+      "@type": "dotwork:metric",
+      "rdfs:label": "a principle of iterate",
+      "dotwork:originalSpans": [
+        {
+          "start": 620,
+          "end": 642,
+          "text": "a principle of iterate"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-a5nohrv2b",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "self-service options.",
+      "dotwork:originalSpans": [
+        {
+          "start": 416,
+          "end": 437,
+          "text": "self-service options."
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-43c7zk5ss",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "a reduction in churn",
+      "dotwork:originalSpans": [
+        {
+          "start": 814,
+          "end": 834,
+          "text": "a reduction in churn"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419452-isiayfxe6"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-jjgpwiecb",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "our responsiveness",
+      "dotwork:originalSpans": [
+        {
+          "start": 706,
+          "end": 724,
+          "text": "our responsiveness"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419452-d1jy2w7sk"
+        },
+        {
+          "@id": "dotwork:entity-1751985419452-zv0mlflmp"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-v5dg1g8ar",
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "enterprise clients",
+      "dotwork:originalSpans": [
+        {
+          "start": 983,
+          "end": 1001,
+          "text": "enterprise clients"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-h7cgdlwv7",
+      "@type": "dotwork:goal",
+      "rdfs:label": "our broader goal",
+      "dotwork:originalSpans": [
+        {
+          "start": 895,
+          "end": 911,
+          "text": "our broader goal"
+        }
+      ],
+      "dotwork:confidence": 0.08333333333333333,
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419452-v5dg1g8ar"
+        },
+        {
+          "@id": "dotwork:entity-1751985419452-uyh6oi91a"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-05rzygqng",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "the same thing:",
+      "dotwork:originalSpans": [
+        {
+          "start": 479,
+          "end": 494,
+          "text": "the same thing:"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-28x0js82j",
+      "@type": "dotwork:goal",
+      "rdfs:label": "an internal aim",
+      "dotwork:originalSpans": [
+        {
+          "start": 679,
+          "end": 694,
+          "text": "an internal aim"
+        }
+      ],
+      "dotwork:confidence": 0.08333333333333333,
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419452-d1jy2w7sk"
+        },
+        {
+          "@id": "dotwork:entity-1751985419452-zv0mlflmp"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-isiayfxe6",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "perfect uptime.",
+      "dotwork:originalSpans": [
+        {
+          "start": 855,
+          "end": 870,
+          "text": "perfect uptime."
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-5zayydq6r",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "B2B SaaS space",
+      "dotwork:originalSpans": [
+        {
+          "start": 243,
+          "end": 257,
+          "text": "B2B SaaS space"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419448-3l5vdx2vy",
+      "@type": "dotwork:time-period",
+      "rdfs:label": "Last quarter,",
+      "dotwork:originalSpans": [
+        {
+          "start": 0,
+          "end": 13,
+          "text": "Last quarter,"
+        }
+      ],
+      "dotwork:confidence": 0.14285714285714285,
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419450-65bv4ze4b"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-u1iyxnein",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "the key ideas",
+      "dotwork:originalSpans": [
+        {
+          "start": 309,
+          "end": 322,
+          "text": "the key ideas"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-orlw4cdge",
+      "@type": "dotwork:initiative",
+      "rdfs:label": "These efforts",
+      "dotwork:originalSpans": [
+        {
+          "start": 871,
+          "end": 884,
+          "text": "These efforts"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693,
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419452-uyh6oi91a"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-rvacx9k5e",
+      "@type": "dotwork:process",
+      "rdfs:label": "the process,",
+      "dotwork:originalSpans": [
+        {
+          "start": 450,
+          "end": 462,
+          "text": "the process,"
+        }
+      ],
+      "dotwork:confidence": 0.18181818181818182
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-uyh6oi91a",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "satisfaction",
+      "dotwork:originalSpans": [
+        {
+          "start": 966,
+          "end": 978,
+          "text": "satisfaction"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419450-65bv4ze4b",
+      "@type": "dotwork:initiative",
+      "rdfs:label": "the rollout",
+      "dotwork:originalSpans": [
+        {
+          "start": 89,
+          "end": 100,
+          "text": "the rollout"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-l0n2n6j50",
+      "@type": "dotwork:initiative",
+      "rdfs:label": "our efforts",
+      "dotwork:originalSpans": [
+        {
+          "start": 554,
+          "end": 565,
+          "text": "our efforts"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693,
+      "dotwork:occurs_during": [
+        {
+          "@id": "dotwork:entity-1751985419451-mjvnwb0s5"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419451-mjvnwb0s5"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-jmpgxp6h9",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "struggling",
+      "dotwork:originalSpans": [
+        {
+          "start": 269,
+          "end": 279,
+          "text": "struggling"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419450-ufckv9a2c",
+      "@type": "dotwork:insight",
+      "rdfs:label": "insights.",
+      "dotwork:originalSpans": [
+        {
+          "start": 123,
+          "end": 132,
+          "text": "insights."
+        }
+      ],
+      "dotwork:confidence": 0.08333333333333333
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-nlyb9y6i7",
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "customers",
+      "dotwork:originalSpans": [
+        {
+          "start": 216,
+          "end": 225,
+          "text": "customers"
+        },
+        {
+          "start": 495,
+          "end": 504,
+          "text": "customers"
+        }
+      ],
+      "dotwork:confidence": 0.07692307692307693,
+      "dotwork:occurs_during": [
+        {
+          "@id": "dotwork:entity-1751985419451-5zayydq6r"
+        },
+        {
+          "@id": "dotwork:entity-1751985419451-jmpgxp6h9"
+        },
+        {
+          "@id": "dotwork:entity-1751985419451-frdjih2mz"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-4loktelen",
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "the team",
+      "dotwork:originalSpans": [
+        {
+          "start": 178,
+          "end": 186,
+          "text": "the team"
+        }
+      ],
+      "dotwork:confidence": 0.15384615384615385,
+      "dotwork:occurs_during": [
+        {
+          "@id": "dotwork:entity-1751985419451-5zayydq6r"
+        },
+        {
+          "@id": "dotwork:entity-1751985419451-jmpgxp6h9"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-88y1t87kp",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "the idea",
+      "dotwork:originalSpans": [
+        {
+          "start": 202,
+          "end": 210,
+          "text": "the idea"
+        }
+      ],
+      "dotwork:occurs_during": [
+        {
+          "@id": "dotwork:entity-1751985419451-5zayydq6r"
+        },
+        {
+          "@id": "dotwork:entity-1751985419451-jmpgxp6h9"
+        },
+        {
+          "@id": "dotwork:entity-1751985419451-frdjih2mz"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-7e7wurcm2",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "the time",
+      "dotwork:originalSpans": [
+        {
+          "start": 350,
+          "end": 358,
+          "text": "the time"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419451-a5nohrv2b"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-hl9cdikpe",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "tickets",
+      "dotwork:originalSpans": [
+        {
+          "start": 379,
+          "end": 386,
+          "text": "tickets"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419451-a5nohrv2b"
+        }
+      ]
+    },
+    {
+      "@id": "dotwork:entity-1751985419451-frdjih2mz",
+      "@type": "dotwork:principle",
+      "rdfs:label": "value",
+      "dotwork:originalSpans": [
+        {
+          "start": 287,
+          "end": 292,
+          "text": "value"
+        }
+      ],
+      "dotwork:confidence": 0.08333333333333333
+    },
+    {
+      "@id": "dotwork:entity-1751985419452-ycolypa54",
+      "@type": "dotwork:Entity",
+      "rdfs:label": "We're",
+      "dotwork:originalSpans": [
+        {
+          "start": 793,
+          "end": 798,
+          "text": "We're"
+        }
+      ],
+      "dotwork:occurs_during": [
+        {
+          "@id": "dotwork:entity-1751985419452-isiayfxe6"
+        }
+      ],
+      "dotwork:associated_with": [
+        {
+          "@id": "dotwork:entity-1751985419452-isiayfxe6"
+        }
+      ]
+    }
+  ]
+}

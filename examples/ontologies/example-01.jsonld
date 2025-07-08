@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dotwork": "https://dotwork.com/ontology#",
+    "label": "rdfs:label",
+    "type": "@type",
+    "id": "@id"
+  },
+  "@graph": [
+    {
+      "@id": "dotwork:onboarding_experience",
+      "@type": "dotwork:process",
+      "rdfs:label": "onboarding experience"
+    },
+    {
+      "@id": "dotwork:ai_powered_insights",
+      "@type": "dotwork:resource",
+      "rdfs:label": "AI-powered insights feature"
+    },
+    {
+      "@id": "dotwork:engineering_team", 
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "engineering team"
+    },
+    {
+      "@id": "dotwork:design_team",
+      "@type": "dotwork:stakeholder", 
+      "rdfs:label": "design team"
+    },
+    {
+      "@id": "dotwork:user_friction_reduction",
+      "@type": "dotwork:outcome",
+      "rdfs:label": "user friction reduced by 40%"
+    },
+    {
+      "@id": "dotwork:user_activation_rate",
+      "@type": "dotwork:metric",
+      "rdfs:label": "user activation rates"
+    },
+    {
+      "@id": "dotwork:sarah_johnson",
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "Sarah Johnson"
+    },
+    {
+      "@id": "dotwork:q3",
+      "@type": "dotwork:time-period",
+      "rdfs:label": "Q3"
+    },
+    {
+      "@id": "dotwork:q4",
+      "@type": "dotwork:time-period", 
+      "rdfs:label": "Q4"
+    },
+    {
+      "@id": "dotwork:enterprise_customers",
+      "@type": "dotwork:stakeholder",
+      "rdfs:label": "enterprise customers"
+    }
+  ]
+}

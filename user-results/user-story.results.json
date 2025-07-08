@@ -1,0 +1,1618 @@
+{
+  "narrative": {
+    "id": "narrative-1751985443937-04s7rg1q1",
+    "text": "Last quarter, we focused heavily on improving the onboarding experience, especially with the rollout of the new AI-powered insights. While working through the Q3 growth efforts, the team aligned around the idea that customers in the mid-sized B2B SaaS space were still struggling to see value quickly. One of the key ideas that emerged was to reduce the time it takes to resolve tickets and encourage greater use of self-service options.\n\nThroughout the process, we kept hearing the same thing: customers want to feel heard and supported. So we anchored our efforts around a belief in customer-first decision making and a principle of iterate and validate before scaling. We set an internal aim to improve our responsiveness and to reach 10,000 monthly active users by the end of the quarter. We're also targeting a reduction in churn and aiming for near-perfect uptime. These efforts play into our broader goal to expand into the mid-market and continue increasing satisfaction for enterprise clients in",
+    "entities": [
+      {
+        "id": "entity-1751985444099-5s2g571jx",
+        "text": "a belief in customer-first decision",
+        "spans": [
+          {
+            "start": 573,
+            "end": 608,
+            "text": "a belief in customer-first decision"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-t6ux7xiyl",
+        "text": "10,000 monthly active users",
+        "spans": [
+          {
+            "start": 738,
+            "end": 765,
+            "text": "10,000 monthly active users"
+          }
+        ],
+        "classification": {
+          "type": "time-period",
+          "confidence": 0.047619047619047616,
+          "metadata": {
+            "taxonomyClass": "TimePeriod",
+            "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444097-k9zo8ko5g",
+        "text": "the onboarding experience,",
+        "spans": [
+          {
+            "start": 46,
+            "end": 72,
+            "text": "the onboarding experience,"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444099-l1xfv1mcv",
+        "text": "the end of the quarter.",
+        "spans": [
+          {
+            "start": 769,
+            "end": 792,
+            "text": "the end of the quarter."
+          }
+        ],
+        "classification": {
+          "type": "time-period",
+          "confidence": 0.09523809523809523,
+          "metadata": {
+            "taxonomyClass": "TimePeriod",
+            "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444098-qldkjy3kk",
+        "text": "the Q3 growth efforts,",
+        "spans": [
+          {
+            "start": 155,
+            "end": 177,
+            "text": "the Q3 growth efforts,"
+          }
+        ],
+        "classification": {
+          "type": "time-period",
+          "confidence": 0.09523809523809523,
+          "metadata": {
+            "taxonomyClass": "TimePeriod",
+            "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-a3qmrldt1",
+        "text": "a principle of iterate",
+        "spans": [
+          {
+            "start": 620,
+            "end": 642,
+            "text": "a principle of iterate"
+          }
+        ],
+        "classification": {
+          "type": "metric",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Metric",
+            "description": "Key performance indicators and measurements"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444098-kcfxzov43",
+        "text": "self-service options.",
+        "spans": [
+          {
+            "start": 416,
+            "end": 437,
+            "text": "self-service options."
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444099-e0klh6imb",
+        "text": "a reduction in churn",
+        "spans": [
+          {
+            "start": 814,
+            "end": 834,
+            "text": "a reduction in churn"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444099-bbscult7w",
+        "text": "our responsiveness",
+        "spans": [
+          {
+            "start": 706,
+            "end": 724,
+            "text": "our responsiveness"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444099-82397zu60",
+        "text": "enterprise clients",
+        "spans": [
+          {
+            "start": 983,
+            "end": 1001,
+            "text": "enterprise clients"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-wpgmd1fzq",
+        "text": "our broader goal",
+        "spans": [
+          {
+            "start": 895,
+            "end": 911,
+            "text": "our broader goal"
+          }
+        ],
+        "classification": {
+          "type": "goal",
+          "confidence": 0.08333333333333333,
+          "metadata": {
+            "taxonomyClass": "Goal",
+            "description": "Objectives, targets, and desired states"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-tbgrsk1t0",
+        "text": "the same thing:",
+        "spans": [
+          {
+            "start": 479,
+            "end": 494,
+            "text": "the same thing:"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444099-yrgfly8ys",
+        "text": "an internal aim",
+        "spans": [
+          {
+            "start": 679,
+            "end": 694,
+            "text": "an internal aim"
+          }
+        ],
+        "classification": {
+          "type": "goal",
+          "confidence": 0.08333333333333333,
+          "metadata": {
+            "taxonomyClass": "Goal",
+            "description": "Objectives, targets, and desired states"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-nvcxo4uaf",
+        "text": "perfect uptime.",
+        "spans": [
+          {
+            "start": 855,
+            "end": 870,
+            "text": "perfect uptime."
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444098-oh1zcij04",
+        "text": "B2B SaaS space",
+        "spans": [
+          {
+            "start": 243,
+            "end": 257,
+            "text": "B2B SaaS space"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444095-2r312ipwz",
+        "text": "Last quarter,",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "Last quarter,"
+          }
+        ],
+        "classification": {
+          "type": "time-period",
+          "confidence": 0.14285714285714285,
+          "metadata": {
+            "taxonomyClass": "TimePeriod",
+            "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444098-o06nxlnu4",
+        "text": "the key ideas",
+        "spans": [
+          {
+            "start": 309,
+            "end": 322,
+            "text": "the key ideas"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444099-f3w65flnz",
+        "text": "These efforts",
+        "spans": [
+          {
+            "start": 871,
+            "end": 884,
+            "text": "These efforts"
+          }
+        ],
+        "classification": {
+          "type": "initiative",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Initiative",
+            "description": "Strategic programs, projects, and organized efforts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-oyf9ypl9i",
+        "text": "the process,",
+        "spans": [
+          {
+            "start": 450,
+            "end": 462,
+            "text": "the process,"
+          }
+        ],
+        "classification": {
+          "type": "process",
+          "confidence": 0.18181818181818182,
+          "metadata": {
+            "taxonomyClass": "Process",
+            "description": "Workflows, procedures, and systematic approaches"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-4l78t1tvo",
+        "text": "satisfaction",
+        "spans": [
+          {
+            "start": 966,
+            "end": 978,
+            "text": "satisfaction"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444098-4gh6anel4",
+        "text": "the rollout",
+        "spans": [
+          {
+            "start": 89,
+            "end": 100,
+            "text": "the rollout"
+          }
+        ],
+        "classification": {
+          "type": "initiative",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Initiative",
+            "description": "Strategic programs, projects, and organized efforts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-1xizmofaz",
+        "text": "our efforts",
+        "spans": [
+          {
+            "start": 554,
+            "end": 565,
+            "text": "our efforts"
+          }
+        ],
+        "classification": {
+          "type": "initiative",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Initiative",
+            "description": "Strategic programs, projects, and organized efforts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444098-lc85qddx4",
+        "text": "struggling",
+        "spans": [
+          {
+            "start": 269,
+            "end": 279,
+            "text": "struggling"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444098-1306bjy4v",
+        "text": "insights.",
+        "spans": [
+          {
+            "start": 123,
+            "end": 132,
+            "text": "insights."
+          }
+        ],
+        "classification": {
+          "type": "insight",
+          "confidence": 0.08333333333333333,
+          "metadata": {
+            "taxonomyClass": "Insight",
+            "description": "Learnings, discoveries, and key findings"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-4tmeuaob0",
+        "text": "customers",
+        "spans": [
+          {
+            "start": 216,
+            "end": 225,
+            "text": "customers"
+          },
+          {
+            "start": 495,
+            "end": 504,
+            "text": "customers"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444098-0hwlimt5s",
+        "text": "the team",
+        "spans": [
+          {
+            "start": 178,
+            "end": 186,
+            "text": "the team"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.15384615384615385,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444098-r812fpl30",
+        "text": "the idea",
+        "spans": [
+          {
+            "start": 202,
+            "end": 210,
+            "text": "the idea"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444098-ygycw6hsm",
+        "text": "the time",
+        "spans": [
+          {
+            "start": 350,
+            "end": 358,
+            "text": "the time"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444098-okqznhg8q",
+        "text": "tickets",
+        "spans": [
+          {
+            "start": 379,
+            "end": 386,
+            "text": "tickets"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751985444098-lgtj6gczu",
+        "text": "value",
+        "spans": [
+          {
+            "start": 287,
+            "end": 292,
+            "text": "value"
+          }
+        ],
+        "classification": {
+          "type": "principle",
+          "confidence": 0.08333333333333333,
+          "metadata": {
+            "taxonomyClass": "Principle",
+            "description": "Guiding values, beliefs, and strategic directions"
+          }
+        }
+      },
+      {
+        "id": "entity-1751985444099-b9wt51h4r",
+        "text": "We're",
+        "spans": [
+          {
+            "start": 793,
+            "end": 798,
+            "text": "We're"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "relation-1751985444147-lvtmsrovr",
+        "sourceEntityId": "entity-1751985444097-k9zo8ko5g",
+        "targetEntityId": "entity-1751985444098-4gh6anel4",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-m78qf737f",
+        "sourceEntityId": "entity-1751985444097-k9zo8ko5g",
+        "targetEntityId": "entity-1751985444098-1306bjy4v",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "especially with the rollout of the new AI-powered",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-o5sq56p94",
+        "sourceEntityId": "entity-1751985444095-2r312ipwz",
+        "targetEntityId": "entity-1751985444098-4gh6anel4",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "we focused heavily on improving the onboarding experience, especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-ko2350qdj",
+        "sourceEntityId": "entity-1751985444098-qldkjy3kk",
+        "targetEntityId": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "the team aligned around the idea that customers in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-cy2ljsreq",
+        "sourceEntityId": "entity-1751985444099-4tmeuaob0",
+        "targetEntityId": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "confidence": 0.8,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-0o31k9my2",
+        "sourceEntityId": "entity-1751985444098-0hwlimt5s",
+        "targetEntityId": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "aligned around the idea that customers in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-t0hhveoqz",
+        "sourceEntityId": "entity-1751985444098-r812fpl30",
+        "targetEntityId": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "confidence": 0.8,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "that customers in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-q3q9bhmp1",
+        "sourceEntityId": "entity-1751985444099-4tmeuaob0",
+        "targetEntityId": "entity-1751985444098-lc85qddx4",
+        "label": "occurs_during",
+        "confidence": 0.8,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "in the mid-sized B2B SaaS space were still",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-4h8g5uv16",
+        "sourceEntityId": "entity-1751985444098-0hwlimt5s",
+        "targetEntityId": "entity-1751985444098-lc85qddx4",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "aligned around the idea that customers in the mid-sized B2B SaaS space were still",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-p1fa1xjnx",
+        "sourceEntityId": "entity-1751985444098-r812fpl30",
+        "targetEntityId": "entity-1751985444098-lc85qddx4",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "that customers in the mid-sized B2B SaaS space were still",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-vms21o4rp",
+        "sourceEntityId": "entity-1751985444099-4tmeuaob0",
+        "targetEntityId": "entity-1751985444098-lgtj6gczu",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "in the mid-sized B2B SaaS space were still struggling to see",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-7vi3orbli",
+        "sourceEntityId": "entity-1751985444098-r812fpl30",
+        "targetEntityId": "entity-1751985444098-lgtj6gczu",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "that customers in the mid-sized B2B SaaS space were still struggling to see",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-dzvk2s1h2",
+        "sourceEntityId": "entity-1751985444098-ygycw6hsm",
+        "targetEntityId": "entity-1751985444098-kcfxzov43",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "it takes to resolve tickets and encourage greater use of",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-wcxmyroj9",
+        "sourceEntityId": "entity-1751985444098-okqznhg8q",
+        "targetEntityId": "entity-1751985444098-kcfxzov43",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and encourage greater use of",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-iaqzuf6dc",
+        "sourceEntityId": "entity-1751985444099-5s2g571jx",
+        "targetEntityId": "entity-1751985444099-a3qmrldt1",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "making and",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-vvmpbubgw",
+        "sourceEntityId": "entity-1751985444099-1xizmofaz",
+        "targetEntityId": "entity-1751985444099-a3qmrldt1",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "around a belief in customer-first decision making and",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-6ekpp5pwd",
+        "sourceEntityId": "entity-1751985444099-1xizmofaz",
+        "targetEntityId": "entity-1751985444099-a3qmrldt1",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "around a belief in customer-first decision making and",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-zfkms6er1",
+        "sourceEntityId": "entity-1751985444099-bbscult7w",
+        "targetEntityId": "entity-1751985444099-t6ux7xiyl",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and to reach",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-r8rlfl07t",
+        "sourceEntityId": "entity-1751985444099-yrgfly8ys",
+        "targetEntityId": "entity-1751985444099-t6ux7xiyl",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "to improve our responsiveness and to reach",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-4z8j7rcoc",
+        "sourceEntityId": "entity-1751985444099-bbscult7w",
+        "targetEntityId": "entity-1751985444099-l1xfv1mcv",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and to reach 10,000 monthly active users by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-5zyimo59h",
+        "sourceEntityId": "entity-1751985444099-yrgfly8ys",
+        "targetEntityId": "entity-1751985444099-l1xfv1mcv",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "to improve our responsiveness and to reach 10,000 monthly active users by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-rb8dktqoh",
+        "sourceEntityId": "entity-1751985444099-e0klh6imb",
+        "targetEntityId": "entity-1751985444099-nvcxo4uaf",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and aiming for near-",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-18suv2fbw",
+        "sourceEntityId": "entity-1751985444099-b9wt51h4r",
+        "targetEntityId": "entity-1751985444099-nvcxo4uaf",
+        "label": "occurs_during",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "in",
+          "context": "also targeting a reduction in churn and aiming for near-",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-04b89e2xn",
+        "sourceEntityId": "entity-1751985444099-b9wt51h4r",
+        "targetEntityId": "entity-1751985444099-nvcxo4uaf",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "also targeting a reduction in churn and aiming for near-",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-qrcri6mxb",
+        "sourceEntityId": "entity-1751985444099-wpgmd1fzq",
+        "targetEntityId": "entity-1751985444099-82397zu60",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "to expand into the mid-market and continue increasing satisfaction for",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-9qo86o9wu",
+        "sourceEntityId": "entity-1751985444099-wpgmd1fzq",
+        "targetEntityId": "entity-1751985444099-4l78t1tvo",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "to expand into the mid-market and continue increasing",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-r6h9ilwly",
+        "sourceEntityId": "entity-1751985444099-f3w65flnz",
+        "targetEntityId": "entity-1751985444099-4l78t1tvo",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "play into our broader goal to expand into the mid-market and continue increasing",
+          "extractionMethod": "linguistic_pattern"
+        }
+      }
+    ],
+    "createdAt": "2025-07-08T14:37:23.937Z",
+    "updatedAt": "2025-07-08T14:37:24.148Z"
+  },
+  "ontology": {
+    "id": "ontology-1751985444148-1y4s80wy6",
+    "nodes": [
+      {
+        "id": "entity-1751985444099-5s2g571jx",
+        "label": "a belief in customer-first decision",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 573,
+              "end": 608,
+              "text": "a belief in customer-first decision"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444099-t6ux7xiyl",
+        "label": "10,000 monthly active users",
+        "type": "time-period",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 738,
+              "end": 765,
+              "text": "10,000 monthly active users"
+            }
+          ],
+          "confidence": 0.047619047619047616
+        }
+      },
+      {
+        "id": "entity-1751985444097-k9zo8ko5g",
+        "label": "the onboarding experience,",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 46,
+              "end": 72,
+              "text": "the onboarding experience,"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444099-l1xfv1mcv",
+        "label": "the end of the quarter.",
+        "type": "time-period",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 769,
+              "end": 792,
+              "text": "the end of the quarter."
+            }
+          ],
+          "confidence": 0.09523809523809523
+        }
+      },
+      {
+        "id": "entity-1751985444098-qldkjy3kk",
+        "label": "the Q3 growth efforts,",
+        "type": "time-period",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 155,
+              "end": 177,
+              "text": "the Q3 growth efforts,"
+            }
+          ],
+          "confidence": 0.09523809523809523
+        }
+      },
+      {
+        "id": "entity-1751985444099-a3qmrldt1",
+        "label": "a principle of iterate",
+        "type": "metric",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 620,
+              "end": 642,
+              "text": "a principle of iterate"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444098-kcfxzov43",
+        "label": "self-service options.",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 416,
+              "end": 437,
+              "text": "self-service options."
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444099-e0klh6imb",
+        "label": "a reduction in churn",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 814,
+              "end": 834,
+              "text": "a reduction in churn"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444099-bbscult7w",
+        "label": "our responsiveness",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 706,
+              "end": 724,
+              "text": "our responsiveness"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444099-82397zu60",
+        "label": "enterprise clients",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 983,
+              "end": 1001,
+              "text": "enterprise clients"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444099-wpgmd1fzq",
+        "label": "our broader goal",
+        "type": "goal",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 895,
+              "end": 911,
+              "text": "our broader goal"
+            }
+          ],
+          "confidence": 0.08333333333333333
+        }
+      },
+      {
+        "id": "entity-1751985444099-tbgrsk1t0",
+        "label": "the same thing:",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 479,
+              "end": 494,
+              "text": "the same thing:"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444099-yrgfly8ys",
+        "label": "an internal aim",
+        "type": "goal",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 679,
+              "end": 694,
+              "text": "an internal aim"
+            }
+          ],
+          "confidence": 0.08333333333333333
+        }
+      },
+      {
+        "id": "entity-1751985444099-nvcxo4uaf",
+        "label": "perfect uptime.",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 855,
+              "end": 870,
+              "text": "perfect uptime."
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444098-oh1zcij04",
+        "label": "B2B SaaS space",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 243,
+              "end": 257,
+              "text": "B2B SaaS space"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444095-2r312ipwz",
+        "label": "Last quarter,",
+        "type": "time-period",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 0,
+              "end": 13,
+              "text": "Last quarter,"
+            }
+          ],
+          "confidence": 0.14285714285714285
+        }
+      },
+      {
+        "id": "entity-1751985444098-o06nxlnu4",
+        "label": "the key ideas",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 309,
+              "end": 322,
+              "text": "the key ideas"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444099-f3w65flnz",
+        "label": "These efforts",
+        "type": "initiative",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 871,
+              "end": 884,
+              "text": "These efforts"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444099-oyf9ypl9i",
+        "label": "the process,",
+        "type": "process",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 450,
+              "end": 462,
+              "text": "the process,"
+            }
+          ],
+          "confidence": 0.18181818181818182
+        }
+      },
+      {
+        "id": "entity-1751985444099-4l78t1tvo",
+        "label": "satisfaction",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 966,
+              "end": 978,
+              "text": "satisfaction"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444098-4gh6anel4",
+        "label": "the rollout",
+        "type": "initiative",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 89,
+              "end": 100,
+              "text": "the rollout"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444099-1xizmofaz",
+        "label": "our efforts",
+        "type": "initiative",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 554,
+              "end": 565,
+              "text": "our efforts"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444098-lc85qddx4",
+        "label": "struggling",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 269,
+              "end": 279,
+              "text": "struggling"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444098-1306bjy4v",
+        "label": "insights.",
+        "type": "insight",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 123,
+              "end": 132,
+              "text": "insights."
+            }
+          ],
+          "confidence": 0.08333333333333333
+        }
+      },
+      {
+        "id": "entity-1751985444099-4tmeuaob0",
+        "label": "customers",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 216,
+              "end": 225,
+              "text": "customers"
+            },
+            {
+              "start": 495,
+              "end": 504,
+              "text": "customers"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751985444098-0hwlimt5s",
+        "label": "the team",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 178,
+              "end": 186,
+              "text": "the team"
+            }
+          ],
+          "confidence": 0.15384615384615385
+        }
+      },
+      {
+        "id": "entity-1751985444098-r812fpl30",
+        "label": "the idea",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 202,
+              "end": 210,
+              "text": "the idea"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444098-ygycw6hsm",
+        "label": "the time",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 350,
+              "end": 358,
+              "text": "the time"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444098-okqznhg8q",
+        "label": "tickets",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 379,
+              "end": 386,
+              "text": "tickets"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751985444098-lgtj6gczu",
+        "label": "value",
+        "type": "principle",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 287,
+              "end": 292,
+              "text": "value"
+            }
+          ],
+          "confidence": 0.08333333333333333
+        }
+      },
+      {
+        "id": "entity-1751985444099-b9wt51h4r",
+        "label": "We're",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 793,
+              "end": 798,
+              "text": "We're"
+            }
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "relation-1751985444147-lvtmsrovr",
+        "source": "entity-1751985444097-k9zo8ko5g",
+        "target": "entity-1751985444098-4gh6anel4",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-m78qf737f",
+        "source": "entity-1751985444097-k9zo8ko5g",
+        "target": "entity-1751985444098-1306bjy4v",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "especially with the rollout of the new AI-powered",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-o5sq56p94",
+        "source": "entity-1751985444095-2r312ipwz",
+        "target": "entity-1751985444098-4gh6anel4",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "with",
+          "context": "we focused heavily on improving the onboarding experience, especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-ko2350qdj",
+        "source": "entity-1751985444098-qldkjy3kk",
+        "target": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "the team aligned around the idea that customers in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-cy2ljsreq",
+        "source": "entity-1751985444099-4tmeuaob0",
+        "target": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.8,
+          "patternMatch": "in",
+          "context": "in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-0o31k9my2",
+        "source": "entity-1751985444098-0hwlimt5s",
+        "target": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "aligned around the idea that customers in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-t0hhveoqz",
+        "source": "entity-1751985444098-r812fpl30",
+        "target": "entity-1751985444098-oh1zcij04",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.8,
+          "patternMatch": "in",
+          "context": "that customers in the mid-sized",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-q3q9bhmp1",
+        "source": "entity-1751985444099-4tmeuaob0",
+        "target": "entity-1751985444098-lc85qddx4",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.8,
+          "patternMatch": "in",
+          "context": "in the mid-sized B2B SaaS space were still",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-4h8g5uv16",
+        "source": "entity-1751985444098-0hwlimt5s",
+        "target": "entity-1751985444098-lc85qddx4",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "aligned around the idea that customers in the mid-sized B2B SaaS space were still",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-p1fa1xjnx",
+        "source": "entity-1751985444098-r812fpl30",
+        "target": "entity-1751985444098-lc85qddx4",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "that customers in the mid-sized B2B SaaS space were still",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-vms21o4rp",
+        "source": "entity-1751985444099-4tmeuaob0",
+        "target": "entity-1751985444098-lgtj6gczu",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "in the mid-sized B2B SaaS space were still struggling to see",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-7vi3orbli",
+        "source": "entity-1751985444098-r812fpl30",
+        "target": "entity-1751985444098-lgtj6gczu",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "that customers in the mid-sized B2B SaaS space were still struggling to see",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-dzvk2s1h2",
+        "source": "entity-1751985444098-ygycw6hsm",
+        "target": "entity-1751985444098-kcfxzov43",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "it takes to resolve tickets and encourage greater use of",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-wcxmyroj9",
+        "source": "entity-1751985444098-okqznhg8q",
+        "target": "entity-1751985444098-kcfxzov43",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and encourage greater use of",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-iaqzuf6dc",
+        "source": "entity-1751985444099-5s2g571jx",
+        "target": "entity-1751985444099-a3qmrldt1",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "making and",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-vvmpbubgw",
+        "source": "entity-1751985444099-1xizmofaz",
+        "target": "entity-1751985444099-a3qmrldt1",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "around a belief in customer-first decision making and",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-6ekpp5pwd",
+        "source": "entity-1751985444099-1xizmofaz",
+        "target": "entity-1751985444099-a3qmrldt1",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "around a belief in customer-first decision making and",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-zfkms6er1",
+        "source": "entity-1751985444099-bbscult7w",
+        "target": "entity-1751985444099-t6ux7xiyl",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and to reach",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-r8rlfl07t",
+        "source": "entity-1751985444099-yrgfly8ys",
+        "target": "entity-1751985444099-t6ux7xiyl",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "to improve our responsiveness and to reach",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-4z8j7rcoc",
+        "source": "entity-1751985444099-bbscult7w",
+        "target": "entity-1751985444099-l1xfv1mcv",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and to reach 10,000 monthly active users by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-5zyimo59h",
+        "source": "entity-1751985444099-yrgfly8ys",
+        "target": "entity-1751985444099-l1xfv1mcv",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "to improve our responsiveness and to reach 10,000 monthly active users by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-rb8dktqoh",
+        "source": "entity-1751985444099-e0klh6imb",
+        "target": "entity-1751985444099-nvcxo4uaf",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and aiming for near-",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-18suv2fbw",
+        "source": "entity-1751985444099-b9wt51h4r",
+        "target": "entity-1751985444099-nvcxo4uaf",
+        "label": "occurs_during",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "in",
+          "context": "also targeting a reduction in churn and aiming for near-",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-04b89e2xn",
+        "source": "entity-1751985444099-b9wt51h4r",
+        "target": "entity-1751985444099-nvcxo4uaf",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "also targeting a reduction in churn and aiming for near-",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-qrcri6mxb",
+        "source": "entity-1751985444099-wpgmd1fzq",
+        "target": "entity-1751985444099-82397zu60",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "to expand into the mid-market and continue increasing satisfaction for",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-9qo86o9wu",
+        "source": "entity-1751985444099-wpgmd1fzq",
+        "target": "entity-1751985444099-4l78t1tvo",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "to expand into the mid-market and continue increasing",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751985444148-r6h9ilwly",
+        "source": "entity-1751985444099-f3w65flnz",
+        "target": "entity-1751985444099-4l78t1tvo",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "play into our broader goal to expand into the mid-market and continue increasing",
+          "extractionMethod": "linguistic_pattern"
+        }
+      }
+    ],
+    "metadata": {
+      "sourceNarrativeId": "narrative-1751985443937-04s7rg1q1",
+      "extractedAt": "2025-07-08T14:37:24.149Z",
+      "entityCount": 31,
+      "relationCount": 27
+    },
+    "createdAt": "2025-07-08T14:37:24.148Z"
+  },
+  "stats": {
+    "entityCount": 31,
+    "relationCount": 27,
+    "processingTime": 212,
+    "classificationCoverage": 0.5483870967741935
+  }
+}

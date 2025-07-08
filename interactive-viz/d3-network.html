@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Narrative Network - D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .control-group label {
+            font-weight: 500;
+            color: #495057;
+        }
+        
+        .control-group input, .control-group select {
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .legend {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+        }
+        
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        #network {
+            width: 100%;
+            height: 600px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .info-panel {
+            padding: 20px;
+            background: white;
+        }
+        
+        .info-panel h3 {
+            margin: 0 0 10px 0;
+            color: #495057;
+        }
+        
+        .info-panel p {
+            margin: 5px 0;
+            color: #6c757d;
+        }
+        
+        .node {
+            cursor: pointer;
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+        
+        .node:hover {
+            stroke-width: 3px;
+        }
+        
+        .link {
+            fill: none;
+            stroke: #999;
+            stroke-opacity: 0.3;
+            stroke-width: 1px;
+        }
+        
+        .link:hover {
+            stroke-opacity: 0.8;
+            stroke-width: 2px;
+        }
+        
+        .node-label {
+            font-size: 11px;
+            fill: #333;
+            text-anchor: middle;
+            pointer-events: none;
+            font-weight: 500;
+        }
+        
+        .link-label {
+            font-size: 10px;
+            fill: #666;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+        
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 250px;
+        }
+        
+        .highlighted {
+            stroke: #ff6b6b !important;
+            stroke-width: 4px !important;
+        }
+        
+        .connected {
+            stroke: #4ecdc4 !important;
+            stroke-width: 3px !important;
+        }
+        
+        .faded {
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🕸️ Interactive Narrative Network</h1>
+            <p>Explore the entities and relationships extracted from your business story</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="force-strength">Force Strength:</label>
+                <input type="range" id="force-strength" min="10" max="500" value="100">
+            </div>
+            
+            <div class="control-group">
+                <label for="node-size">Node Size:</label>
+                <input type="range" id="node-size" min="3" max="20" value="8">
+            </div>
+            
+            <div class="control-group">
+                <label for="filter-type">Filter by Type:</label>
+                <select id="filter-type">
+                    <option value="all">All Types</option>
+                    <option value="stakeholder">Stakeholders</option>
+                    <option value="time-period">Time Periods</option>
+                    <option value="goal">Goals</option>
+                    <option value="outcome">Outcomes</option>
+                    <option value="initiative">Initiatives</option>
+                    <option value="process">Processes</option>
+                    <option value="insight">Insights</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <input type="text" id="search" placeholder="Search entities...">
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #96CEB4;"></div>
+                <span>Stakeholders</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FF6B6B;"></div>
+                <span>Time Periods</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FFB6C1;"></div>
+                <span>Goals</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #45B7D1;"></div>
+                <span>Outcomes</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #4ECDC4;"></div>
+                <span>Initiatives</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FFEAA7;"></div>
+                <span>Processes</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #87CEEB;"></div>
+                <span>Insights</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #DDA0DD;"></div>
+                <span>Resources</span>
+            </div>
+        </div>
+        
+        <svg id="network"></svg>
+        
+        <div class="info-panel">
+            <h3>📊 Network Statistics</h3>
+            <p id="stats">Loading...</p>
+            <p><strong>Instructions:</strong> Click and drag nodes to explore • Hover for details • Use controls to filter and adjust • Search to find specific entities</p>
+        </div>
+    </div>
+
+    <script>
+        // Color mapping for different entity types
+        const colorMap = {
+            'stakeholder': '#96CEB4',
+            'time-period': '#FF6B6B', 
+            'goal': '#FFB6C1',
+            'outcome': '#45B7D1',
+            'initiative': '#4ECDC4',
+            'process': '#FFEAA7',
+            'insight': '#87CEEB',
+            'resource': '#DDA0DD',
+            'metric': '#F0E68C',
+            'principle': '#D3D3D3'
+        };
+
+        // Load the narrative data
+        async function loadNarrativeData() {
+            try {
+                const response = await fetch('user-story.results.json');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error loading data:', error);
+                // Fallback sample data for demo
+                return {
+                    narrative: {
+                        entities: [
+                            {id: 'e1', text: 'Last quarter', classification: {type: 'time-period'}},
+                            {id: 'e2', text: 'the team', classification: {type: 'stakeholder'}},
+                            {id: 'e3', text: 'onboarding experience', classification: {type: 'process'}},
+                            {id: 'e4', text: '10,000 monthly active users', classification: {type: 'goal'}},
+                            {id: 'e5', text: 'customer-first decision making', classification: {type: 'principle'}},
+                            {id: 'e6', text: 'enterprise clients', classification: {type: 'stakeholder'}},
+                            {id: 'e7', text: 'reduction in churn', classification: {type: 'outcome'}},
+                            {id: 'e8', text: 'Q3 growth efforts', classification: {type: 'initiative'}},
+                            {id: 'e9', text: 'AI-powered insights', classification: {type: 'resource'}},
+                            {id: 'e10', text: 'self-service options', classification: {type: 'process'}}
+                        ],
+                        relations: [
+                            {sourceEntityId: 'e1', targetEntityId: 'e3', label: 'focused_on'},
+                            {sourceEntityId: 'e2', targetEntityId: 'e4', label: 'aims_for'},
+                            {sourceEntityId: 'e3', targetEntityId: 'e9', label: 'uses'},
+                            {sourceEntityId: 'e8', targetEntityId: 'e6', label: 'targets'},
+                            {sourceEntityId: 'e5', targetEntityId: 'e7', label: 'leads_to'},
+                            {sourceEntityId: 'e10', targetEntityId: 'e7', label: 'helps_achieve'}
+                        ]
+                    }
+                };
+            }
+        }
+
+        // Initialize the network visualization
+        async function initializeNetwork() {
+            const data = await loadNarrativeData();
+            
+            const entities = data.narrative.entities || [];
+            const relations = data.narrative.relations || [];
+            
+            // Update stats
+            document.getElementById('stats').textContent = 
+                `${entities.length} entities • ${relations.length} relationships • ${new Set(entities.map(e => e.classification?.type)).size} types`;
+            
+            // Prepare nodes and links for D3
+            const nodes = entities.map(entity => ({
+                id: entity.id,
+                label: entity.text.length > 30 ? entity.text.substring(0, 30) + '...' : entity.text,
+                fullText: entity.text,
+                type: entity.classification?.type || 'Entity',
+                confidence: entity.classification?.confidence || 0,
+                color: colorMap[entity.classification?.type || 'Entity'] || '#cccccc'
+            }));
+            
+            const links = relations.map(relation => ({
+                source: relation.sourceEntityId,
+                target: relation.targetEntityId,
+                label: relation.label,
+                confidence: relation.confidence || 0.5
+            }));
+            
+            createNetworkVisualization(nodes, links);
+        }
+        
+        function createNetworkVisualization(nodes, links) {
+            const svg = d3.select('#network');
+            const width = 1160;
+            const height = 600;
+            
+            svg.attr('width', width).attr('height', height);
+            
+            // Clear previous content
+            svg.selectAll('*').remove();
+            
+            // Create tooltip
+            const tooltip = d3.select('body').append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+            
+            // Create force simulation
+            const simulation = d3.forceSimulation(nodes)
+                .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+                .force('charge', d3.forceManyBody().strength(-100))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(20));
+            
+            // Create links
+            const link = svg.append('g')
+                .selectAll('line')
+                .data(links)
+                .enter()
+                .append('line')
+                .attr('class', 'link')
+                .style('stroke-width', d => Math.sqrt(d.confidence * 3));
+            
+            // Create link labels
+            const linkLabel = svg.append('g')
+                .selectAll('text')
+                .data(links)
+                .enter()
+                .append('text')
+                .attr('class', 'link-label')
+                .text(d => d.label.replace(/_/g, ' '))
+                .style('opacity', 0);
+            
+            // Create nodes
+            const node = svg.append('g')
+                .selectAll('circle')
+                .data(nodes)
+                .enter()
+                .append('circle')
+                .attr('class', 'node')
+                .attr('r', 8)
+                .attr('fill', d => d.color)
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+            
+            // Create node labels
+            const nodeLabel = svg.append('g')
+                .selectAll('text')
+                .data(nodes)
+                .enter()
+                .append('text')
+                .attr('class', 'node-label')
+                .text(d => d.label)
+                .attr('dy', 25);
+            
+            // Add interactivity
+            node
+                .on('mouseover', function(event, d) {
+                    // Show tooltip
+                    tooltip.transition().duration(200).style('opacity', .9);
+                    tooltip.html(`
+                        <strong>${d.fullText}</strong><br/>
+                        Type: ${d.type}<br/>
+                        Confidence: ${(d.confidence * 100).toFixed(1)}%
+                    `)
+                        .style('left', (event.pageX + 10) + 'px')
+                        .style('top', (event.pageY - 28) + 'px');
+                    
+                    // Highlight connected nodes
+                    highlightConnected(d.id);
+                })
+                .on('mouseout', function(d) {
+                    tooltip.transition().duration(500).style('opacity', 0);
+                    clearHighlight();
+                })
+                .on('click', function(event, d) {
+                    console.log('Clicked:', d);
+                });
+            
+            // Update positions on simulation tick
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+                
+                linkLabel
+                    .attr('x', d => (d.source.x + d.target.x) / 2)
+                    .attr('y', d => (d.source.y + d.target.y) / 2);
+                
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+                
+                nodeLabel
+                    .attr('x', d => d.x)
+                    .attr('y', d => d.y);
+            });
+            
+            // Drag functions
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+            
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+            
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+            
+            // Highlight connected nodes
+            function highlightConnected(nodeId) {
+                const connectedNodes = new Set();
+                links.forEach(link => {
+                    if (link.source.id === nodeId) connectedNodes.add(link.target.id);
+                    if (link.target.id === nodeId) connectedNodes.add(link.source.id);
+                });
+                
+                node.classed('highlighted', d => d.id === nodeId)
+                    .classed('connected', d => connectedNodes.has(d.id))
+                    .classed('faded', d => d.id !== nodeId && !connectedNodes.has(d.id));
+                
+                link.classed('highlighted', d => d.source.id === nodeId || d.target.id === nodeId)
+                    .classed('faded', d => d.source.id !== nodeId && d.target.id !== nodeId);
+                
+                linkLabel.style('opacity', d => 
+                    (d.source.id === nodeId || d.target.id === nodeId) ? 1 : 0
+                );
+            }
+            
+            function clearHighlight() {
+                node.classed('highlighted', false)
+                    .classed('connected', false)
+                    .classed('faded', false);
+                
+                link.classed('highlighted', false)
+                    .classed('faded', false);
+                
+                linkLabel.style('opacity', 0);
+            }
+            
+            // Control event handlers
+            d3.select('#force-strength').on('input', function() {
+                simulation.force('charge').strength(-this.value);
+                simulation.alpha(0.3).restart();
+            });
+            
+            d3.select('#node-size').on('input', function() {
+                node.attr('r', this.value);
+                simulation.force('collision').radius(+this.value + 5);
+                simulation.alpha(0.3).restart();
+            });
+            
+            d3.select('#filter-type').on('change', function() {
+                const selectedType = this.value;
+                if (selectedType === 'all') {
+                    node.style('display', 'block');
+                    nodeLabel.style('display', 'block');
+                } else {
+                    node.style('display', d => d.type === selectedType ? 'block' : 'none');
+                    nodeLabel.style('display', d => d.type === selectedType ? 'block' : 'none');
+                }
+            });
+            
+            d3.select('#search').on('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                node.classed('faded', d => 
+                    searchTerm && !d.fullText.toLowerCase().includes(searchTerm)
+                );
+                nodeLabel.classed('faded', d => 
+                    searchTerm && !d.fullText.toLowerCase().includes(searchTerm)
+                );
+            });
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializeNetwork);
+    </script>
+</body>
+</html>

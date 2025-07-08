@@ -1,0 +1,1 @@
+export { NarrativeProcessor, ProcessingOptions, ProcessingResult } from './NarrativeProcessor';

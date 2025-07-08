@@ -1,0 +1,1262 @@
+{
+  "narrative": {
+    "id": "narrative-1751984972204-stxgs2pwy",
+    "text": "Last quarter, we focused heavily on improving the onboarding experience, especially with the rollout of the new AI-powered insights feature. The engineering team worked closely with the design team to implement a streamlined workflow that reduced user friction by 40%. Our customer success metrics showed significant improvement, with user activation rates increasing from 65% to 85% within the first week of launch. The initiative was led by Sarah Johnson and supported by the product team, who conducted extensive user research throughout Q3. Moving forward into Q4, we aim to expand these insights capabilities and target enterprise customers, building on the foundation we've established.",
+    "entities": [
+      {
+        "id": "entity-1751984972392-v0v0xqck1",
+        "text": "Our customer success metrics",
+        "spans": [
+          {
+            "start": 269,
+            "end": 297,
+            "text": "Our customer success metrics"
+          }
+        ],
+        "classification": {
+          "type": "outcome",
+          "confidence": 0.07142857142857142,
+          "metadata": {
+            "taxonomyClass": "Outcome",
+            "description": "Results, achievements, and measurable impacts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972393-adif3osq3",
+        "text": "these insights capabilities",
+        "spans": [
+          {
+            "start": 586,
+            "end": 613,
+            "text": "these insights capabilities"
+          }
+        ],
+        "classification": {
+          "type": "insight",
+          "confidence": 0.08333333333333333,
+          "metadata": {
+            "taxonomyClass": "Insight",
+            "description": "Learnings, discoveries, and key findings"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972388-fjfuyes61",
+        "text": "the onboarding experience,",
+        "spans": [
+          {
+            "start": 46,
+            "end": 72,
+            "text": "the onboarding experience,"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751984972392-67uynlpar",
+        "text": "the first week of launch.",
+        "spans": [
+          {
+            "start": 391,
+            "end": 416,
+            "text": "the first week of launch."
+          }
+        ],
+        "classification": {
+          "type": "time-period",
+          "confidence": 0.047619047619047616,
+          "metadata": {
+            "taxonomyClass": "TimePeriod",
+            "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972392-bmvct5ill",
+        "text": "significant improvement,",
+        "spans": [
+          {
+            "start": 305,
+            "end": 329,
+            "text": "significant improvement,"
+          }
+        ],
+        "classification": {
+          "type": "outcome",
+          "confidence": 0.07142857142857142,
+          "metadata": {
+            "taxonomyClass": "Outcome",
+            "description": "Results, achievements, and measurable impacts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972393-y2ozcr02q",
+        "text": "extensive user research",
+        "spans": [
+          {
+            "start": 506,
+            "end": 529,
+            "text": "extensive user research"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972392-5bs2yl2lc",
+        "text": "reduced user friction",
+        "spans": [
+          {
+            "start": 239,
+            "end": 260,
+            "text": "reduced user friction"
+          }
+        ],
+        "classification": {
+          "type": "outcome",
+          "confidence": 0.07142857142857142,
+          "metadata": {
+            "taxonomyClass": "Outcome",
+            "description": "Results, achievements, and measurable impacts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972393-ckgac8cfq",
+        "text": "enterprise customers,",
+        "spans": [
+          {
+            "start": 625,
+            "end": 646,
+            "text": "enterprise customers,"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.15384615384615385,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972391-h69w4q13j",
+        "text": "The engineering team",
+        "spans": [
+          {
+            "start": 141,
+            "end": 161,
+            "text": "The engineering team"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.23076923076923078,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972393-46evcxmic",
+        "text": "the product team,",
+        "spans": [
+          {
+            "start": 474,
+            "end": 491,
+            "text": "the product team,"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.15384615384615385,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972391-1lfyyyi60",
+        "text": "the design team",
+        "spans": [
+          {
+            "start": 182,
+            "end": 197,
+            "text": "the design team"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.15384615384615385,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972392-bx5l2ur5d",
+        "text": "user activation",
+        "spans": [
+          {
+            "start": 335,
+            "end": 350,
+            "text": "user activation"
+          }
+        ],
+        "classification": {
+          "type": "stakeholder",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Stakeholder",
+            "description": "People, teams, and organizations involved"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972392-rnzd03e7c",
+        "text": "The initiative",
+        "spans": [
+          {
+            "start": 417,
+            "end": 431,
+            "text": "The initiative"
+          }
+        ],
+        "classification": {
+          "type": "initiative",
+          "confidence": 0.15384615384615385,
+          "metadata": {
+            "taxonomyClass": "Initiative",
+            "description": "Strategic programs, projects, and organized efforts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972394-itkuyc2hj",
+        "text": "the foundation",
+        "spans": [
+          {
+            "start": 659,
+            "end": 673,
+            "text": "the foundation"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751984972386-4rhvr4amj",
+        "text": "Last quarter,",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "Last quarter,"
+          }
+        ],
+        "classification": {
+          "type": "time-period",
+          "confidence": 0.14285714285714285,
+          "metadata": {
+            "taxonomyClass": "TimePeriod",
+            "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972393-msx60sxzq",
+        "text": "Sarah Johnson",
+        "spans": [
+          {
+            "start": 443,
+            "end": 456,
+            "text": "Sarah Johnson"
+          }
+        ]
+      },
+      {
+        "id": "entity-1751984972390-wdoemx624",
+        "text": "the rollout",
+        "spans": [
+          {
+            "start": 89,
+            "end": 100,
+            "text": "the rollout"
+          }
+        ],
+        "classification": {
+          "type": "initiative",
+          "confidence": 0.07692307692307693,
+          "metadata": {
+            "taxonomyClass": "Initiative",
+            "description": "Strategic programs, projects, and organized efforts"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972391-gcocvrupg",
+        "text": "insights",
+        "spans": [
+          {
+            "start": 123,
+            "end": 131,
+            "text": "insights"
+          },
+          {
+            "start": 592,
+            "end": 600,
+            "text": "insights"
+          }
+        ],
+        "classification": {
+          "type": "insight",
+          "confidence": 0.08333333333333333,
+          "metadata": {
+            "taxonomyClass": "Insight",
+            "description": "Learnings, discoveries, and key findings"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972391-16p2az4mr",
+        "text": "workflow",
+        "spans": [
+          {
+            "start": 225,
+            "end": 233,
+            "text": "workflow"
+          }
+        ],
+        "classification": {
+          "type": "process",
+          "confidence": 0.09090909090909091,
+          "metadata": {
+            "taxonomyClass": "Process",
+            "description": "Workflows, procedures, and systematic approaches"
+          }
+        }
+      },
+      {
+        "id": "entity-1751984972394-mah1ne9c6",
+        "text": "we've",
+        "spans": [
+          {
+            "start": 674,
+            "end": 679,
+            "text": "we've"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "relation-1751984972469-fuchyujc7",
+        "sourceEntityId": "entity-1751984972388-fjfuyes61",
+        "targetEntityId": "entity-1751984972390-wdoemx624",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-gawtud84p",
+        "sourceEntityId": "entity-1751984972388-fjfuyes61",
+        "targetEntityId": "entity-1751984972391-gcocvrupg",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "especially with the rollout of the new AI-powered",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-2zbvwl0nf",
+        "sourceEntityId": "entity-1751984972386-4rhvr4amj",
+        "targetEntityId": "entity-1751984972390-wdoemx624",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "we focused heavily on improving the onboarding experience, especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ksbug1266",
+        "sourceEntityId": "entity-1751984972391-h69w4q13j",
+        "targetEntityId": "entity-1751984972392-5bs2yl2lc",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "worked closely with the design team to implement a streamlined workflow that",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-jo615psjo",
+        "sourceEntityId": "entity-1751984972391-h69w4q13j",
+        "targetEntityId": "entity-1751984972391-1lfyyyi60",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "worked closely with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-zjhsg96i4",
+        "sourceEntityId": "entity-1751984972391-h69w4q13j",
+        "targetEntityId": "entity-1751984972391-16p2az4mr",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "worked closely with the design team to implement a streamlined",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-7v3jv3m5r",
+        "sourceEntityId": "entity-1751984972392-v0v0xqck1",
+        "targetEntityId": "entity-1751984972392-bx5l2ur5d",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "showed significant improvement, with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ay7xqxwfm",
+        "sourceEntityId": "entity-1751984972392-bmvct5ill",
+        "targetEntityId": "entity-1751984972392-67uynlpar",
+        "label": "part_of",
+        "confidence": 0.63,
+        "metadata": {
+          "patternMatch": "within",
+          "context": "with user activation rates increasing from 65% to 85% within",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-fotm8fnp1",
+        "sourceEntityId": "entity-1751984972392-bmvct5ill",
+        "targetEntityId": "entity-1751984972392-67uynlpar",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "with user activation rates increasing from 65% to 85% within",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ofo2qyoy8",
+        "sourceEntityId": "entity-1751984972392-bx5l2ur5d",
+        "targetEntityId": "entity-1751984972392-67uynlpar",
+        "label": "part_of",
+        "confidence": 0.7,
+        "metadata": {
+          "patternMatch": "within",
+          "context": "rates increasing from 65% to 85% within",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-teq26jv2x",
+        "sourceEntityId": "entity-1751984972392-bmvct5ill",
+        "targetEntityId": "entity-1751984972392-bx5l2ur5d",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "with",
+          "context": "with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ywkc266c3",
+        "sourceEntityId": "entity-1751984972392-rnzd03e7c",
+        "targetEntityId": "entity-1751984972393-y2ozcr02q",
+        "label": "managed_by",
+        "confidence": 0.7200000000000001,
+        "metadata": {
+          "patternMatch": "led by",
+          "context": "was led by Sarah Johnson and supported by the product team, who conducted",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-5a6u7rrzx",
+        "sourceEntityId": "entity-1751984972392-rnzd03e7c",
+        "targetEntityId": "entity-1751984972393-y2ozcr02q",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "was led by Sarah Johnson and supported by the product team, who conducted",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ljlpkoo6u",
+        "sourceEntityId": "entity-1751984972393-msx60sxzq",
+        "targetEntityId": "entity-1751984972393-y2ozcr02q",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and supported by the product team, who conducted",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-vbyonifz6",
+        "sourceEntityId": "entity-1751984972392-rnzd03e7c",
+        "targetEntityId": "entity-1751984972393-46evcxmic",
+        "label": "managed_by",
+        "confidence": 0.8,
+        "metadata": {
+          "patternMatch": "led by",
+          "context": "was led by Sarah Johnson and supported by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-70z2ve9dj",
+        "sourceEntityId": "entity-1751984972392-rnzd03e7c",
+        "targetEntityId": "entity-1751984972393-46evcxmic",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "was led by Sarah Johnson and supported by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-9nzsene4a",
+        "sourceEntityId": "entity-1751984972393-msx60sxzq",
+        "targetEntityId": "entity-1751984972393-46evcxmic",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and supported by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-g5mfzbztz",
+        "sourceEntityId": "entity-1751984972392-rnzd03e7c",
+        "targetEntityId": "entity-1751984972393-msx60sxzq",
+        "label": "managed_by",
+        "confidence": 0.8,
+        "metadata": {
+          "patternMatch": "led by",
+          "context": "was led by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-6685noybo",
+        "sourceEntityId": "entity-1751984972393-adif3osq3",
+        "targetEntityId": "entity-1751984972393-ckgac8cfq",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and target",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-lpt0qo6fe",
+        "sourceEntityId": "entity-1751984972393-adif3osq3",
+        "targetEntityId": "entity-1751984972394-itkuyc2hj",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and target enterprise customers, building on",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-svx0kntdi",
+        "sourceEntityId": "entity-1751984972393-adif3osq3",
+        "targetEntityId": "entity-1751984972394-mah1ne9c6",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "and target enterprise customers, building on the foundation",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-gxe176ewp",
+        "sourceEntityId": "entity-1751984972391-gcocvrupg",
+        "targetEntityId": "entity-1751984972393-ckgac8cfq",
+        "label": "associated_with",
+        "confidence": 0.4,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "capabilities and target",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-atc53m9lg",
+        "sourceEntityId": "entity-1751984972391-gcocvrupg",
+        "targetEntityId": "entity-1751984972394-itkuyc2hj",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "capabilities and target enterprise customers, building on",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-cfn7tj4pp",
+        "sourceEntityId": "entity-1751984972391-gcocvrupg",
+        "targetEntityId": "entity-1751984972394-mah1ne9c6",
+        "label": "associated_with",
+        "confidence": 0.36000000000000004,
+        "metadata": {
+          "patternMatch": "and",
+          "context": "capabilities and target enterprise customers, building on the foundation",
+          "extractionMethod": "linguistic_pattern"
+        }
+      }
+    ],
+    "createdAt": "2025-07-08T14:29:32.204Z",
+    "updatedAt": "2025-07-08T14:29:32.470Z"
+  },
+  "ontology": {
+    "id": "ontology-1751984972471-ssuwnzatl",
+    "nodes": [
+      {
+        "id": "entity-1751984972392-v0v0xqck1",
+        "label": "Our customer success metrics",
+        "type": "outcome",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 269,
+              "end": 297,
+              "text": "Our customer success metrics"
+            }
+          ],
+          "confidence": 0.07142857142857142
+        }
+      },
+      {
+        "id": "entity-1751984972393-adif3osq3",
+        "label": "these insights capabilities",
+        "type": "insight",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 586,
+              "end": 613,
+              "text": "these insights capabilities"
+            }
+          ],
+          "confidence": 0.08333333333333333
+        }
+      },
+      {
+        "id": "entity-1751984972388-fjfuyes61",
+        "label": "the onboarding experience,",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 46,
+              "end": 72,
+              "text": "the onboarding experience,"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751984972392-67uynlpar",
+        "label": "the first week of launch.",
+        "type": "time-period",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 391,
+              "end": 416,
+              "text": "the first week of launch."
+            }
+          ],
+          "confidence": 0.047619047619047616
+        }
+      },
+      {
+        "id": "entity-1751984972392-bmvct5ill",
+        "label": "significant improvement,",
+        "type": "outcome",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 305,
+              "end": 329,
+              "text": "significant improvement,"
+            }
+          ],
+          "confidence": 0.07142857142857142
+        }
+      },
+      {
+        "id": "entity-1751984972393-y2ozcr02q",
+        "label": "extensive user research",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 506,
+              "end": 529,
+              "text": "extensive user research"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751984972392-5bs2yl2lc",
+        "label": "reduced user friction",
+        "type": "outcome",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 239,
+              "end": 260,
+              "text": "reduced user friction"
+            }
+          ],
+          "confidence": 0.07142857142857142
+        }
+      },
+      {
+        "id": "entity-1751984972393-ckgac8cfq",
+        "label": "enterprise customers,",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 625,
+              "end": 646,
+              "text": "enterprise customers,"
+            }
+          ],
+          "confidence": 0.15384615384615385
+        }
+      },
+      {
+        "id": "entity-1751984972391-h69w4q13j",
+        "label": "The engineering team",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 141,
+              "end": 161,
+              "text": "The engineering team"
+            }
+          ],
+          "confidence": 0.23076923076923078
+        }
+      },
+      {
+        "id": "entity-1751984972393-46evcxmic",
+        "label": "the product team,",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 474,
+              "end": 491,
+              "text": "the product team,"
+            }
+          ],
+          "confidence": 0.15384615384615385
+        }
+      },
+      {
+        "id": "entity-1751984972391-1lfyyyi60",
+        "label": "the design team",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 182,
+              "end": 197,
+              "text": "the design team"
+            }
+          ],
+          "confidence": 0.15384615384615385
+        }
+      },
+      {
+        "id": "entity-1751984972392-bx5l2ur5d",
+        "label": "user activation",
+        "type": "stakeholder",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 335,
+              "end": 350,
+              "text": "user activation"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751984972392-rnzd03e7c",
+        "label": "The initiative",
+        "type": "initiative",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 417,
+              "end": 431,
+              "text": "The initiative"
+            }
+          ],
+          "confidence": 0.15384615384615385
+        }
+      },
+      {
+        "id": "entity-1751984972394-itkuyc2hj",
+        "label": "the foundation",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 659,
+              "end": 673,
+              "text": "the foundation"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751984972386-4rhvr4amj",
+        "label": "Last quarter,",
+        "type": "time-period",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 0,
+              "end": 13,
+              "text": "Last quarter,"
+            }
+          ],
+          "confidence": 0.14285714285714285
+        }
+      },
+      {
+        "id": "entity-1751984972393-msx60sxzq",
+        "label": "Sarah Johnson",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 443,
+              "end": 456,
+              "text": "Sarah Johnson"
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity-1751984972390-wdoemx624",
+        "label": "the rollout",
+        "type": "initiative",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 89,
+              "end": 100,
+              "text": "the rollout"
+            }
+          ],
+          "confidence": 0.07692307692307693
+        }
+      },
+      {
+        "id": "entity-1751984972391-gcocvrupg",
+        "label": "insights",
+        "type": "insight",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 123,
+              "end": 131,
+              "text": "insights"
+            },
+            {
+              "start": 592,
+              "end": 600,
+              "text": "insights"
+            }
+          ],
+          "confidence": 0.08333333333333333
+        }
+      },
+      {
+        "id": "entity-1751984972391-16p2az4mr",
+        "label": "workflow",
+        "type": "process",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 225,
+              "end": 233,
+              "text": "workflow"
+            }
+          ],
+          "confidence": 0.09090909090909091
+        }
+      },
+      {
+        "id": "entity-1751984972394-mah1ne9c6",
+        "label": "we've",
+        "type": "Entity",
+        "attributes": {
+          "originalSpans": [
+            {
+              "start": 674,
+              "end": 679,
+              "text": "we've"
+            }
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "relation-1751984972469-fuchyujc7",
+        "source": "entity-1751984972388-fjfuyes61",
+        "target": "entity-1751984972390-wdoemx624",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-gawtud84p",
+        "source": "entity-1751984972388-fjfuyes61",
+        "target": "entity-1751984972391-gcocvrupg",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "especially with the rollout of the new AI-powered",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-2zbvwl0nf",
+        "source": "entity-1751984972386-4rhvr4amj",
+        "target": "entity-1751984972390-wdoemx624",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "with",
+          "context": "we focused heavily on improving the onboarding experience, especially with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ksbug1266",
+        "source": "entity-1751984972391-h69w4q13j",
+        "target": "entity-1751984972392-5bs2yl2lc",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "with",
+          "context": "worked closely with the design team to implement a streamlined workflow that",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-jo615psjo",
+        "source": "entity-1751984972391-h69w4q13j",
+        "target": "entity-1751984972391-1lfyyyi60",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "worked closely with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-zjhsg96i4",
+        "source": "entity-1751984972391-h69w4q13j",
+        "target": "entity-1751984972391-16p2az4mr",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "with",
+          "context": "worked closely with the design team to implement a streamlined",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-7v3jv3m5r",
+        "source": "entity-1751984972392-v0v0xqck1",
+        "target": "entity-1751984972392-bx5l2ur5d",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "showed significant improvement, with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ay7xqxwfm",
+        "source": "entity-1751984972392-bmvct5ill",
+        "target": "entity-1751984972392-67uynlpar",
+        "label": "part_of",
+        "attributes": {
+          "confidence": 0.63,
+          "patternMatch": "within",
+          "context": "with user activation rates increasing from 65% to 85% within",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-fotm8fnp1",
+        "source": "entity-1751984972392-bmvct5ill",
+        "target": "entity-1751984972392-67uynlpar",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "with",
+          "context": "with user activation rates increasing from 65% to 85% within",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ofo2qyoy8",
+        "source": "entity-1751984972392-bx5l2ur5d",
+        "target": "entity-1751984972392-67uynlpar",
+        "label": "part_of",
+        "attributes": {
+          "confidence": 0.7,
+          "patternMatch": "within",
+          "context": "rates increasing from 65% to 85% within",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-teq26jv2x",
+        "source": "entity-1751984972392-bmvct5ill",
+        "target": "entity-1751984972392-bx5l2ur5d",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "with",
+          "context": "with",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ywkc266c3",
+        "source": "entity-1751984972392-rnzd03e7c",
+        "target": "entity-1751984972393-y2ozcr02q",
+        "label": "managed_by",
+        "attributes": {
+          "confidence": 0.7200000000000001,
+          "patternMatch": "led by",
+          "context": "was led by Sarah Johnson and supported by the product team, who conducted",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-5a6u7rrzx",
+        "source": "entity-1751984972392-rnzd03e7c",
+        "target": "entity-1751984972393-y2ozcr02q",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "was led by Sarah Johnson and supported by the product team, who conducted",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-ljlpkoo6u",
+        "source": "entity-1751984972393-msx60sxzq",
+        "target": "entity-1751984972393-y2ozcr02q",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and supported by the product team, who conducted",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-vbyonifz6",
+        "source": "entity-1751984972392-rnzd03e7c",
+        "target": "entity-1751984972393-46evcxmic",
+        "label": "managed_by",
+        "attributes": {
+          "confidence": 0.8,
+          "patternMatch": "led by",
+          "context": "was led by Sarah Johnson and supported by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-70z2ve9dj",
+        "source": "entity-1751984972392-rnzd03e7c",
+        "target": "entity-1751984972393-46evcxmic",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "was led by Sarah Johnson and supported by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-9nzsene4a",
+        "source": "entity-1751984972393-msx60sxzq",
+        "target": "entity-1751984972393-46evcxmic",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and supported by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-g5mfzbztz",
+        "source": "entity-1751984972392-rnzd03e7c",
+        "target": "entity-1751984972393-msx60sxzq",
+        "label": "managed_by",
+        "attributes": {
+          "confidence": 0.8,
+          "patternMatch": "led by",
+          "context": "was led by",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-6685noybo",
+        "source": "entity-1751984972393-adif3osq3",
+        "target": "entity-1751984972393-ckgac8cfq",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and target",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-lpt0qo6fe",
+        "source": "entity-1751984972393-adif3osq3",
+        "target": "entity-1751984972394-itkuyc2hj",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "and target enterprise customers, building on",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-svx0kntdi",
+        "source": "entity-1751984972393-adif3osq3",
+        "target": "entity-1751984972394-mah1ne9c6",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "and target enterprise customers, building on the foundation",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-gxe176ewp",
+        "source": "entity-1751984972391-gcocvrupg",
+        "target": "entity-1751984972393-ckgac8cfq",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.4,
+          "patternMatch": "and",
+          "context": "capabilities and target",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-atc53m9lg",
+        "source": "entity-1751984972391-gcocvrupg",
+        "target": "entity-1751984972394-itkuyc2hj",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "capabilities and target enterprise customers, building on",
+          "extractionMethod": "linguistic_pattern"
+        }
+      },
+      {
+        "id": "relation-1751984972470-cfn7tj4pp",
+        "source": "entity-1751984972391-gcocvrupg",
+        "target": "entity-1751984972394-mah1ne9c6",
+        "label": "associated_with",
+        "attributes": {
+          "confidence": 0.36000000000000004,
+          "patternMatch": "and",
+          "context": "capabilities and target enterprise customers, building on the foundation",
+          "extractionMethod": "linguistic_pattern"
+        }
+      }
+    ],
+    "metadata": {
+      "sourceNarrativeId": "narrative-1751984972204-stxgs2pwy",
+      "extractedAt": "2025-07-08T14:29:32.471Z",
+      "entityCount": 20,
+      "relationCount": 24
+    },
+    "createdAt": "2025-07-08T14:29:32.471Z"
+  },
+  "stats": {
+    "entityCount": 20,
+    "relationCount": 24,
+    "processingTime": 267,
+    "classificationCoverage": 0.8
+  }
+}

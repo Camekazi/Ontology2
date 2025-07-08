@@ -1,0 +1,93 @@
+flowchart TD
+    entity_1751985208588_l374c59q5("Our customer success metrics")
+    entity_1751985208589_32a69aitc("these insights capabilities")
+    entity_1751985208585_iasqpudqz("the onboarding experience,")
+    entity_1751985208588_lpol77dsq("the first week of launch.")
+    entity_1751985208588_qs73701gz("significant improvement,")
+    entity_1751985208589_va1e8zjrm("extensive user research")
+    entity_1751985208588_626xp66qg("reduced user friction")
+    entity_1751985208589_f23tqk18w("enterprise customers,")
+    entity_1751985208587_kq4m7nyxk("The engineering team")
+    entity_1751985208589_jybd6vbci("the product team,")
+    entity_1751985208587_myodl7sp9("the design team")
+    entity_1751985208588_tgsjzizuj("user activation")
+    entity_1751985208588_qetu8ongp("The initiative")
+    entity_1751985208589_gtazeczcv("the foundation")
+    entity_1751985208583_la67un9j6("Last quarter,")
+    entity_1751985208589_8ipdcazsh("Sarah Johnson")
+    entity_1751985208586_aucv2ct82("the rollout")
+    entity_1751985208587_8vi47q3x3("insights")
+    entity_1751985208587_9ruxtc10l("workflow")
+    entity_1751985208589_1xdpfg9gy("we've")
+    entity_1751985208585_iasqpudqz -->|"associated_with"| entity_1751985208586_aucv2ct82
+    entity_1751985208585_iasqpudqz -->|"associated_with"| entity_1751985208587_8vi47q3x3
+    entity_1751985208583_la67un9j6 -->|"associated_with"| entity_1751985208586_aucv2ct82
+    entity_1751985208587_kq4m7nyxk -->|"associated_with"| entity_1751985208588_626xp66qg
+    entity_1751985208587_kq4m7nyxk -->|"associated_with"| entity_1751985208587_myodl7sp9
+    entity_1751985208587_kq4m7nyxk -->|"associated_with"| entity_1751985208587_9ruxtc10l
+    entity_1751985208588_l374c59q5 -->|"associated_with"| entity_1751985208588_tgsjzizuj
+    entity_1751985208588_qs73701gz -->|"part_of"| entity_1751985208588_lpol77dsq
+    entity_1751985208588_qs73701gz -->|"associated_with"| entity_1751985208588_lpol77dsq
+    entity_1751985208588_tgsjzizuj -->|"part_of"| entity_1751985208588_lpol77dsq
+    entity_1751985208588_qs73701gz -->|"associated_with"| entity_1751985208588_tgsjzizuj
+    entity_1751985208588_qetu8ongp -->|"managed_by"| entity_1751985208589_va1e8zjrm
+    entity_1751985208588_qetu8ongp -->|"associated_with"| entity_1751985208589_va1e8zjrm
+    entity_1751985208589_8ipdcazsh -->|"associated_with"| entity_1751985208589_va1e8zjrm
+    entity_1751985208588_qetu8ongp -->|"managed_by"| entity_1751985208589_jybd6vbci
+    entity_1751985208588_qetu8ongp -->|"associated_with"| entity_1751985208589_jybd6vbci
+    entity_1751985208589_8ipdcazsh -->|"associated_with"| entity_1751985208589_jybd6vbci
+    entity_1751985208588_qetu8ongp -->|"managed_by"| entity_1751985208589_8ipdcazsh
+    entity_1751985208589_32a69aitc -->|"associated_with"| entity_1751985208589_f23tqk18w
+    entity_1751985208589_32a69aitc -->|"associated_with"| entity_1751985208589_gtazeczcv
+    entity_1751985208589_32a69aitc -->|"associated_with"| entity_1751985208589_1xdpfg9gy
+    entity_1751985208587_8vi47q3x3 -->|"associated_with"| entity_1751985208589_f23tqk18w
+    entity_1751985208587_8vi47q3x3 -->|"associated_with"| entity_1751985208589_gtazeczcv
+    entity_1751985208587_8vi47q3x3 -->|"associated_with"| entity_1751985208589_1xdpfg9gy
+
+    classDef classoutcome fill:#45B7D1,stroke:#333,stroke-width:2px,color:#000
+    class entity_1751985208588_l374c59q5,entity_1751985208588_qs73701gz,entity_1751985208588_626xp66qg classoutcome
+    classDef classinsight fill:#87CEEB,stroke:#333,stroke-width:2px,color:#000
+    class entity_1751985208589_32a69aitc,entity_1751985208587_8vi47q3x3 classinsight
+    classDef classtimeperiod fill:#FF6B6B,stroke:#333,stroke-width:2px,color:#000
+    class entity_1751985208588_lpol77dsq,entity_1751985208583_la67un9j6 classtimeperiod
+    classDef classstakeholder fill:#96CEB4,stroke:#333,stroke-width:2px,color:#000
+    class entity_1751985208589_va1e8zjrm,entity_1751985208589_f23tqk18w,entity_1751985208587_kq4m7nyxk,entity_1751985208589_jybd6vbci,entity_1751985208587_myodl7sp9,entity_1751985208588_tgsjzizuj classstakeholder
+    classDef classinitiative fill:#4ECDC4,stroke:#333,stroke-width:2px,color:#000
+    class entity_1751985208588_qetu8ongp,entity_1751985208586_aucv2ct82 classinitiative
+    classDef classprocess fill:#FFEAA7,stroke:#333,stroke-width:2px,color:#000
+    class entity_1751985208587_9ruxtc10l classprocess
+
+%% Legend
+subgraph Legend
+    legend_time_period["TimePeriod"]
+    legend_initiative["Initiative"]
+    legend_outcome["Outcome"]
+    legend_stakeholder["Stakeholder"]
+    legend_process["Process"]
+    legend_resource["Resource"]
+    legend_goal["Goal"]
+    legend_metric["Metric"]
+    legend_insight["Insight"]
+    legend_principle["Principle"]
+end
+
+classDef legendtimeperiod fill:#FF6B6B,stroke:#333,stroke-width:2px,color:#000
+class legend_time_period legendtimeperiod
+classDef legendinitiative fill:#4ECDC4,stroke:#333,stroke-width:2px,color:#000
+class legend_initiative legendinitiative
+classDef legendoutcome fill:#45B7D1,stroke:#333,stroke-width:2px,color:#000
+class legend_outcome legendoutcome
+classDef legendstakeholder fill:#96CEB4,stroke:#333,stroke-width:2px,color:#000
+class legend_stakeholder legendstakeholder
+classDef legendprocess fill:#FFEAA7,stroke:#333,stroke-width:2px,color:#000
+class legend_process legendprocess
+classDef legendresource fill:#DDA0DD,stroke:#333,stroke-width:2px,color:#000
+class legend_resource legendresource
+classDef legendgoal fill:#FFB6C1,stroke:#333,stroke-width:2px,color:#000
+class legend_goal legendgoal
+classDef legendmetric fill:#F0E68C,stroke:#333,stroke-width:2px,color:#000
+class legend_metric legendmetric
+classDef legendinsight fill:#87CEEB,stroke:#333,stroke-width:2px,color:#000
+class legend_insight legendinsight
+classDef legendprinciple fill:#D3D3D3,stroke:#333,stroke-width:2px,color:#000
+class legend_principle legendprinciple

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="label" for="node" attr.name="Label" attr.type="string"/>
+  <key id="type" for="node" attr.name="Type" attr.type="string"/>
+  <key id="label" for="edge" attr.name="Label" attr.type="string"/>
+  <graph id="ontology" edgedefault="directed">
+    <node id="entity-1751985644084-s1am1gup7">
+      <data key="label">a belief in customer-first decision</data>
+      <data key="type">stakeholder</data>
+    </node>
+    <node id="entity-1751985644084-u36d97n2a">
+      <data key="label">10,000 monthly active users</data>
+      <data key="type">time-period</data>
+    </node>
+    <node id="entity-1751985644082-4vecrsp8z">
+      <data key="label">the onboarding experience,</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644084-ai4t63uyy">
+      <data key="label">the end of the quarter.</data>
+      <data key="type">time-period</data>
+    </node>
+    <node id="entity-1751985644083-eixa01bpk">
+      <data key="label">the Q3 growth efforts,</data>
+      <data key="type">time-period</data>
+    </node>
+    <node id="entity-1751985644084-ui4x8omk9">
+      <data key="label">a principle of iterate</data>
+      <data key="type">metric</data>
+    </node>
+    <node id="entity-1751985644083-257xkr868">
+      <data key="label">self-service options.</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644084-q37p3tyum">
+      <data key="label">a reduction in churn</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644084-8w5v90gc3">
+      <data key="label">our responsiveness</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644085-6el9bqpzg">
+      <data key="label">enterprise clients</data>
+      <data key="type">stakeholder</data>
+    </node>
+    <node id="entity-1751985644084-8mgtogwly">
+      <data key="label">our broader goal</data>
+      <data key="type">goal</data>
+    </node>
+    <node id="entity-1751985644084-b81umeo1q">
+      <data key="label">the same thing:</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644084-o8ecjt759">
+      <data key="label">an internal aim</data>
+      <data key="type">goal</data>
+    </node>
+    <node id="entity-1751985644084-inouesm5h">
+      <data key="label">perfect uptime.</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644083-xtsqe4adx">
+      <data key="label">B2B SaaS space</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644081-7og4zmsv3">
+      <data key="label">Last quarter,</data>
+      <data key="type">time-period</data>
+    </node>
+    <node id="entity-1751985644083-mayazjytr">
+      <data key="label">the key ideas</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644084-ycauw70ke">
+      <data key="label">These efforts</data>
+      <data key="type">initiative</data>
+    </node>
+    <node id="entity-1751985644084-ak7t9cz7p">
+      <data key="label">the process,</data>
+      <data key="type">process</data>
+    </node>
+    <node id="entity-1751985644084-9fotubl0s">
+      <data key="label">satisfaction</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644083-ku9i6k8c8">
+      <data key="label">the rollout</data>
+      <data key="type">initiative</data>
+    </node>
+    <node id="entity-1751985644084-b3d977t1d">
+      <data key="label">our efforts</data>
+      <data key="type">initiative</data>
+    </node>
+    <node id="entity-1751985644083-rnuqijo9j">
+      <data key="label">struggling</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644083-t9vpkfvfm">
+      <data key="label">insights.</data>
+      <data key="type">insight</data>
+    </node>
+    <node id="entity-1751985644084-5p9uosvyt">
+      <data key="label">customers</data>
+      <data key="type">stakeholder</data>
+    </node>
+    <node id="entity-1751985644083-h8t5m6lpl">
+      <data key="label">the team</data>
+      <data key="type">stakeholder</data>
+    </node>
+    <node id="entity-1751985644083-179m27hwg">
+      <data key="label">the idea</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644083-n6a8b664c">
+      <data key="label">the time</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644083-5y2w51cd4">
+      <data key="label">tickets</data>
+      <data key="type">Entity</data>
+    </node>
+    <node id="entity-1751985644083-642j3v86q">
+      <data key="label">value</data>
+      <data key="type">principle</data>
+    </node>
+    <node id="entity-1751985644084-twll5lo1x">
+      <data key="label">We&apos;re</data>
+      <data key="type">Entity</data>
+    </node>
+    <edge id="relation-1751985644135-8pd4h3xaf" source="entity-1751985644082-4vecrsp8z" target="entity-1751985644083-ku9i6k8c8">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644135-ddm98cuxo" source="entity-1751985644082-4vecrsp8z" target="entity-1751985644083-t9vpkfvfm">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644135-62kqr8sdd" source="entity-1751985644081-7og4zmsv3" target="entity-1751985644083-ku9i6k8c8">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644135-d8u5u969x" source="entity-1751985644083-eixa01bpk" target="entity-1751985644083-xtsqe4adx">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644135-2glidtt2d" source="entity-1751985644084-5p9uosvyt" target="entity-1751985644083-xtsqe4adx">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644135-srh0hcy1o" source="entity-1751985644083-h8t5m6lpl" target="entity-1751985644083-xtsqe4adx">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-sk8xfptaj" source="entity-1751985644083-179m27hwg" target="entity-1751985644083-xtsqe4adx">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-5s5ji14nr" source="entity-1751985644084-5p9uosvyt" target="entity-1751985644083-rnuqijo9j">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-9meb2hecb" source="entity-1751985644083-h8t5m6lpl" target="entity-1751985644083-rnuqijo9j">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-l9g1vavpt" source="entity-1751985644083-179m27hwg" target="entity-1751985644083-rnuqijo9j">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-z8n11exe7" source="entity-1751985644084-5p9uosvyt" target="entity-1751985644083-642j3v86q">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-wdk4n1c7h" source="entity-1751985644083-179m27hwg" target="entity-1751985644083-642j3v86q">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-lstkaunsv" source="entity-1751985644083-n6a8b664c" target="entity-1751985644083-257xkr868">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-57vhag70l" source="entity-1751985644083-5y2w51cd4" target="entity-1751985644083-257xkr868">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-e0qjpo6gy" source="entity-1751985644084-s1am1gup7" target="entity-1751985644084-ui4x8omk9">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-q8tm1yudt" source="entity-1751985644084-b3d977t1d" target="entity-1751985644084-ui4x8omk9">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-vrh1hpgxu" source="entity-1751985644084-b3d977t1d" target="entity-1751985644084-ui4x8omk9">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-tho9scygj" source="entity-1751985644084-8w5v90gc3" target="entity-1751985644084-u36d97n2a">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-mlevpafj2" source="entity-1751985644084-o8ecjt759" target="entity-1751985644084-u36d97n2a">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-3nefcqzy8" source="entity-1751985644084-8w5v90gc3" target="entity-1751985644084-ai4t63uyy">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-udz0rm855" source="entity-1751985644084-o8ecjt759" target="entity-1751985644084-ai4t63uyy">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-bg9nc4guy" source="entity-1751985644084-q37p3tyum" target="entity-1751985644084-inouesm5h">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-2ewz5zxyq" source="entity-1751985644084-twll5lo1x" target="entity-1751985644084-inouesm5h">
+      <data key="label">occurs_during</data>
+    </edge>
+    <edge id="relation-1751985644136-z3hz8kmdq" source="entity-1751985644084-twll5lo1x" target="entity-1751985644084-inouesm5h">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-04wrcwont" source="entity-1751985644084-8mgtogwly" target="entity-1751985644085-6el9bqpzg">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-m0irbvweg" source="entity-1751985644084-8mgtogwly" target="entity-1751985644084-9fotubl0s">
+      <data key="label">associated_with</data>
+    </edge>
+    <edge id="relation-1751985644136-agkjm09v1" source="entity-1751985644084-ycauw70ke" target="entity-1751985644084-9fotubl0s">
+      <data key="label">associated_with</data>
+    </edge>
+  </graph>
+</graphml>
