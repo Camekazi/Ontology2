@@ -97,8 +97,8 @@ src/
 ├── taxonomy/       # Default 10-class taxonomy
 ├── extraction/     # Entity and relation extraction
 ├── pipeline/       # End-to-end processing pipeline
-├── ui/            # Mermaid renderer for visualizations
-└── export/        # Export to various formats
+├── ui/            # Visualization renderers (Mermaid, D3.js helpers)
+└── export/        # Export to various formats (Cytoscape, JSON-LD, GraphML)
 
 tools/             # CLI tools
 examples/          # Sample narratives and outputs
@@ -159,9 +159,34 @@ See the `examples/` directory for sample narratives and their expected ontology 
 - **example-02.txt**: Business performance narrative with financial metrics
 - **example-03.txt**: Mobile app redesign project narrative
 
-## Export Formats
+## Visualization & Export Formats
 
-### JSON-LD
+### Interactive D3.js Network (Recommended)
+- **Drag-and-drop** node manipulation
+- **Real-time filtering** by entity type
+- **Hover interactions** with detailed tooltips
+- **Search functionality** to find specific entities
+- **Physics-based layouts** for natural clustering
+- **Color-coded nodes** by taxonomy classification
+
+### Cytoscape.js Format
+```json
+{
+  "elements": [
+    {
+      "data": {
+        "id": "engineering_team",
+        "label": "engineering team",
+        "type": "stakeholder"
+      }
+    }
+  ],
+  "style": [...],
+  "layout": { "name": "cose" }
+}
+```
+
+### JSON-LD for Semantic Web
 ```json
 {
   "@context": {
@@ -178,16 +203,10 @@ See the `examples/` directory for sample narratives and their expected ontology 
 }
 ```
 
-### Mermaid
-```mermaid
-flowchart TD
-    engineering_team["engineering team"]
-    onboarding_experience["onboarding experience"]
-    engineering_team --> onboarding_experience
-```
-
-### GraphML, GEXF, Cytoscape
-Full support for graph analysis tools and network visualization platforms.
+### Professional Network Analysis
+- **GraphML** for yEd, Gephi, NetworkX
+- **GEXF** for advanced network analysis
+- **Mermaid** for documentation and simple diagrams
 
 ## Contributing
 
