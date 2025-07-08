@@ -9,8 +9,8 @@ Transform informal narratives into structured, color-coded ontologies and sharea
 - 🔍 **Entity Extraction**: Extract entities from narratives using NLP (noun-chunks + custom patterns)
 - 🔗 **Relationship Inference**: Infer relationships using linguistic cues and patterns
 - 🏷️ **Classification**: Classify entities using a 10-class taxonomy (TimePeriod, Initiative, Outcome, etc.)
-- 📊 **Visualization**: Generate Mermaid diagrams for live graphs and documentation
-- 📤 **Export**: Export to JSON-LD, GraphML, GEXF, Cytoscape formats
+- 🕸️ **Interactive Visualization**: Generate interactive D3.js network graphs with drag-and-drop, filtering, and real-time exploration
+- 📊 **Multiple Formats**: Export to JSON-LD, GraphML, GEXF, Cytoscape, and Mermaid formats
 - ⚡ **CLI Tools**: End-to-end workflow processing in < 15 minutes
 
 ## Quick Start
@@ -25,8 +25,8 @@ npm run build
 # Run with example narrative
 npm run example
 
-# Process your own narrative
-npm run cli process path/to/narrative.txt
+# Process your own narrative and generate interactive visualization
+npm run cli process path/to/narrative.txt --output results --format cytoscape
 
 # Run demo
 npm run cli demo
@@ -47,13 +47,13 @@ npm run cli demo
 ### CLI Commands
 
 ```bash
-# Process single narrative
-npx dotwork-ontology process narrative.txt -o output/ -f json-ld,mermaid
+# Process single narrative with interactive visualization
+npx dotwork-ontology process narrative.txt -o output/ -f cytoscape,json-ld
 
-# Process multiple narratives
-npx dotwork-ontology batch narratives/ -o output/ -f graphml
+# Process multiple narratives for network analysis
+npx dotwork-ontology batch narratives/ -o output/ -f gexf,graphml
 
-# Run demo with example
+# Run demo with interactive D3.js network
 npx dotwork-ontology demo -o demo-output/
 ```
 
@@ -65,12 +65,9 @@ import { NarrativeProcessor, MermaidRenderer, OntologyExporter } from 'dotwork-n
 const processor = new NarrativeProcessor();
 const result = await processor.processNarrative(narrativeText);
 
-// Generate visualizations
-const renderer = new MermaidRenderer();
-const diagram = renderer.renderOntology(result.ontology);
-
-// Export to formats
+// Generate interactive visualizations
 const exporter = new OntologyExporter();
+const cytoscape = exporter.toCytoscape(result.ontology); // For interactive D3.js networks
 const jsonLd = exporter.toJsonLD(result.ontology);
 const graphML = exporter.toGraphML(result.ontology);
 ```
