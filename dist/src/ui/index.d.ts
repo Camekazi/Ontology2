@@ -1,2 +1,2 @@
-export { MermaidRenderer, MermaidOptions } from './MermaidRenderer';
+export {};
 //# sourceMappingURL=index.d.ts.map

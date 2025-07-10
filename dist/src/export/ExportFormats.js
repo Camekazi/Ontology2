@@ -46,38 +46,6 @@ class OntologyExporter {
             '@graph': graph
         };
     }
-    toGraphML(ontology) {
-        const doc = this.prepareGraphMLDocument(ontology);
-        let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-        xml += '<graphml xmlns="http://graphml.graphdrawing.org/xmlns" ';
-        xml += 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ';
-        xml += 'xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns ';
-        xml += 'http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">\n';
-        // Add key definitions
-        for (const key of doc.keys) {
-            xml += `  <key id="${key.id}" for="${key.for}" attr.name="${key.name}" attr.type="${key.type}"/>\n`;
-        }
-        xml += '  <graph id="ontology" edgedefault="directed">\n';
-        // Add nodes
-        for (const node of doc.nodes) {
-            xml += `    <node id="${node.id}">\n`;
-            for (const data of node.data) {
-                xml += `      <data key="${data.key}">${this.escapeXml(data.value)}</data>\n`;
-            }
-            xml += '    </node>\n';
-        }
-        // Add edges
-        for (const edge of doc.edges) {
-            xml += `    <edge id="${edge.id}" source="${edge.source}" target="${edge.target}">\n`;
-            for (const data of edge.data) {
-                xml += `      <data key="${data.key}">${this.escapeXml(data.value)}</data>\n`;
-            }
-            xml += '    </edge>\n';
-        }
-        xml += '  </graph>\n';
-        xml += '</graphml>';
-        return xml;
-    }
     toCytoscape(ontology) {
         const elements = [];
         // Add nodes
@@ -118,70 +86,6 @@ class OntologyExporter {
             }
         };
     }
-    toGEXF(ontology) {
-        let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-        xml += '<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">\n';
-        xml += '  <meta lastmodifieddate="' + new Date().toISOString() + '">\n';
-        xml += '    <creator>Dotwork Narrative-to-Ontology</creator>\n';
-        xml += '    <description>Ontology extracted from narrative</description>\n';
-        xml += '  </meta>\n';
-        xml += '  <graph mode="static" defaultedgetype="directed">\n';
-        // Define attributes
-        xml += '    <attributes class="node">\n';
-        xml += '      <attribute id="0" title="type" type="string"/>\n';
-        xml += '      <attribute id="1" title="label" type="string"/>\n';
-        xml += '    </attributes>\n';
-        xml += '    <attributes class="edge">\n';
-        xml += '      <attribute id="0" title="label" type="string"/>\n';
-        xml += '    </attributes>\n';
-        // Add nodes
-        xml += '    <nodes>\n';
-        for (const node of ontology.nodes) {
-            xml += `      <node id="${node.id}" label="${this.escapeXml(node.label)}">\n`;
-            xml += '        <attvalues>\n';
-            xml += `          <attvalue for="0" value="${this.escapeXml(node.type)}"/>\n`;
-            xml += `          <attvalue for="1" value="${this.escapeXml(node.label)}"/>\n`;
-            xml += '        </attvalues>\n';
-            xml += '      </node>\n';
-        }
-        xml += '    </nodes>\n';
-        // Add edges
-        xml += '    <edges>\n';
-        for (const edge of ontology.edges) {
-            xml += `      <edge id="${edge.id}" source="${edge.source}" target="${edge.target}">\n`;
-            xml += '        <attvalues>\n';
-            xml += `          <attvalue for="0" value="${this.escapeXml(edge.label)}"/>\n`;
-            xml += '        </attvalues>\n';
-            xml += '      </edge>\n';
-        }
-        xml += '    </edges>\n';
-        xml += '  </graph>\n';
-        xml += '</gexf>';
-        return xml;
-    }
-    prepareGraphMLDocument(ontology) {
-        const keys = [
-            { id: 'label', for: 'node', type: 'string', name: 'Label' },
-            { id: 'type', for: 'node', type: 'string', name: 'Type' },
-            { id: 'label', for: 'edge', type: 'string', name: 'Label' }
-        ];
-        const nodes = ontology.nodes.map(node => ({
-            id: node.id,
-            data: [
-                { key: 'label', value: node.label },
-                { key: 'type', value: node.type }
-            ]
-        }));
-        const edges = ontology.edges.map(edge => ({
-            id: edge.id,
-            source: edge.source,
-            target: edge.target,
-            data: [
-                { key: 'label', value: edge.label }
-            ]
-        }));
-        return { nodes, edges, keys };
-    }
     getCytoscapeStyle() {
         return [
             {
@@ -213,13 +117,23 @@ class OntologyExporter {
             }
         ];
     }
-    escapeXml(text) {
-        return text
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&apos;');
+    toCSV(ontology) {
+        // Export nodes CSV
+        let nodesCsv = 'id,label,type\n';
+        for (const node of ontology.nodes) {
+            const label = node.label.replace(/"/g, '""'); // Escape quotes
+            nodesCsv += `"${node.id}","${label}","${node.type}"\n`;
+        }
+        // Export edges CSV  
+        let edgesCsv = 'source,target,label\n';
+        for (const edge of ontology.edges) {
+            const label = edge.label.replace(/"/g, '""'); // Escape quotes
+            edgesCsv += `"${edge.source}","${edge.target}","${label}"\n`;
+        }
+        return {
+            nodes: nodesCsv,
+            edges: edgesCsv
+        };
     }
 }
 exports.OntologyExporter = OntologyExporter;

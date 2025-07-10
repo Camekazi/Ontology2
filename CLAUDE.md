@@ -6,16 +6,17 @@ This file provides guidance to **Claude Code** (`claude.ai/code`) when working w
 
 ## Repository Purpose
 
-This repo contains the code‑first implementation of the **Dotwork "Narrative‑to‑Ontology" Workspace** described in the PRD (v0.10 – July 2025).  The project helps product teams transform an informal narrative into a structured, color‑coded ontology and a shareable concept map—without starting from a blank "fancy diagram."  It prevents **strategy‑execution drift** by making relationships between *narratives → things → classifications → ontology* explicit and queryable.
+This repo contains the code‑first implementation of the **Dotwork "Narrative‑to‑Ontology" Workspace**. The project helps product teams transform informal narratives into structured, color‑coded ontologies and shareable concept maps—without starting from a blank "fancy diagram." It prevents **strategy‑execution drift** by making relationships between *narratives → things → classifications → ontology* explicit and queryable.
 
 > *"Plans lose their power the moment strategy and execution drift apart."* — John Cutler
 
 The repo functions as  ⬇︎
 
 * **Core Library** (`/src`) – NLP extraction, relationship inference, ontology export
-* **CLI & Scripts** (`/tools`) – edges → interactive D3.js concept maps / JSON‑LD conversion
+* **CLI Tool** (`/tools/cli.ts`) – Command-line interface for processing narratives
+* **Interactive Visualizations** (`/interactive-viz`) – D3.js network visualizations and templates
 * **Example Narratives** (`/examples`) – sample input, golden ontology outputs, test fixtures
-* **Docs** (`/docs`) – PRD, architecture notes, ADRs and this CLAUDE.md
+* **Tests** (`/tests`) – Unit, integration, and end-to-end tests
 
 ## Implementation Flow (per PRD)
 
@@ -31,14 +32,18 @@ A happy‑path end‑to‑end run should finish in < 15 min on commodity hardwar
 
 ## Key Domain Objects
 
-| Folder         | Object            | Description                                 |
-| -------------- | ----------------- | ------------------------------------------- |
-| `src/core`     | `Narrative`       | Raw text + metadata                         |
-|                | `Entity`          | Thing reference, spans & classification     |
-|                | `Relation`        | Directed, labeled edge between two entities |
-|                | `Ontology`        | Final node–edge graph + export adapters     |
-| `interactive-viz/` | `D3.js Networks` | Interactive concept map visualizations     |
-| `src/taxonomy` | `DefaultTaxonomy` | 10 PRD-specified classes with exact colors |
+| Folder             | Object               | Description                                 |
+| ------------------ | -------------------- | ------------------------------------------- |
+| `src/core`         | `Narrative`          | Raw text + metadata                         |
+|                    | `Entity`             | Thing reference, spans & classification     |
+|                    | `Relation`           | Directed, labeled edge between two entities |
+|                    | `Ontology`           | Final node–edge graph + export adapters     |
+| `src/taxonomy`     | `DefaultTaxonomy`    | 10 classes with exact colors & patterns    |
+| `src/extraction`   | `EntityExtractor`    | NLP-based entity extraction                 |
+|                    | `RelationExtractor`  | Relationship inference between entities     |
+| `src/pipeline`     | `NarrativeProcessor` | End-to-end processing pipeline              |
+| `src/export`       | `OntologyExporter`   | Export formats (JSON-LD, Cytoscape, CSV)   |
+| `interactive-viz/` | `D3.js Networks`     | Interactive concept map visualizations     |
 
 ## Claude – How to Help
 
@@ -52,9 +57,9 @@ A happy‑path end‑to‑end run should finish in < 15 min on commodity hardwar
 4. **Document public APIs** with docstrings that match the taxonomy wording (e.g. *TimePeriod*, *Goal*).  Consistency helps downstream tools.
 5. **Generate interactive visualizations** for complex narratives using D3.js networks rather than static diagrams.
 
-### 🔄 When Updating the PRD
+### 🔄 When Updating Documentation
 
-*Edit `/docs/PRD.md` directly.*  Make sure the **North‑Star Outcome**, **Goals**, and **KPIs** mirror any new capabilities you add.  Keep Mermaid examples minimal—single graph per section. For user-facing examples, prefer interactive D3.js networks.
+*Note: No formal PRD file exists yet.* For now, update this `CLAUDE.md` file with any architectural changes or new capabilities. When creating documentation, keep Mermaid examples minimal—single graph per section. For user-facing examples, prefer interactive D3.js networks.
 
 ### 🕸️ Interactive Visualizations (Preferred)
 
@@ -67,11 +72,15 @@ A happy‑path end‑to‑end run should finish in < 15 min on commodity hardwar
 **Workflow for interactive visualizations:**
 ```bash
 # 1. Process narrative to generate Cytoscape format
+npm run build
 npm run cli process narrative.txt --format cytoscape
 
-# 2. Create D3.js network (template in interactive-viz/)
-# 3. Embed the generated data into the HTML template
+# 2. Use existing D3.js templates in interactive-viz/
+# 3. Load the generated .cytoscape.json file into d3-network-standalone.html
 # 4. Test interactivity: drag nodes, filter types, search entities
+
+# Alternative: Run demo with built-in example
+npm run cli demo
 ```
 
 ### 📊 Static Diagrams
@@ -107,17 +116,20 @@ A complete transcript lives in `/examples/narratives/example‑01.txt` and the e
 ## Pull‑Request Checklist
 
 * [ ] All new code has unit + integration tests
-* [ ] Documentation updated (PRD milestones section, if scope changed)
+* [ ] Documentation updated (CLAUDE.md, if scope changed)
 * [ ] Interactive visualization demo attached for UI changes
 * [ ] D3.js network visualization works in browsers
-* [ ] Export formats (Cytoscape, JSON-LD, GraphML) validate
+* [ ] Export formats (Cytoscape, JSON-LD, CSV) validate
 * [ ] CI passes (type‑check, lint, test, build)
+* [ ] CLI commands work with new changes: `npm run cli process`, `npm run cli demo`
 
 ## House Rules
 
 1. **No Obsidian assumptions.**  This repo is editor‑agnostic; README snippets should work in any Markdown viewer.
 2. **Outcome over output.**  A passing test that doesn't improve extraction accuracy is still a failure.
-3. **Single source of truth**—PRD governs.  If code diverges, update code *or* submit a PRD change first.
+3. **Single source of truth**—CLAUDE.md governs implementation guidance.  If code diverges, update code *or* submit a CLAUDE.md change first.
+4. **CLI-first approach.**  All major functionality should be accessible via `npm run cli` commands.
+5. **Test-driven development.**  Use `/tests` for unit, integration, and end-to-end coverage.
 
 ---
 

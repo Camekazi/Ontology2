@@ -12,39 +12,13 @@ export interface JsonLdGraph {
     '@context': JsonLdContext;
     '@graph': JsonLdNode[];
 }
-export interface GraphMLNode {
-    id: string;
-    data: Array<{
-        key: string;
-        value: string;
-    }>;
-}
-export interface GraphMLEdge {
-    id: string;
-    source: string;
-    target: string;
-    data: Array<{
-        key: string;
-        value: string;
-    }>;
-}
-export interface GraphMLDocument {
-    nodes: GraphMLNode[];
-    edges: GraphMLEdge[];
-    keys: Array<{
-        id: string;
-        for: 'node' | 'edge';
-        type: string;
-        name: string;
-    }>;
-}
 export declare class OntologyExporter {
     toJsonLD(ontology: Ontology): JsonLdGraph;
-    toGraphML(ontology: Ontology): string;
     toCytoscape(ontology: Ontology): object;
-    toGEXF(ontology: Ontology): string;
-    private prepareGraphMLDocument;
     private getCytoscapeStyle;
-    private escapeXml;
+    toCSV(ontology: Ontology): {
+        nodes: string;
+        edges: string;
+    };
 }
 //# sourceMappingURL=ExportFormats.d.ts.map

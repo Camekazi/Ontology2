@@ -19,6 +19,5 @@ __exportStar(require("./core"), exports);
 __exportStar(require("./taxonomy"), exports);
 __exportStar(require("./extraction"), exports);
 __exportStar(require("./pipeline"), exports);
-__exportStar(require("./ui"), exports);
 __exportStar(require("./export"), exports);
 //# sourceMappingURL=index.js.map

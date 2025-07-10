@@ -42,7 +42,6 @@ const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const chalk_1 = __importDefault(require("chalk"));
 const NarrativeProcessor_1 = require("../src/pipeline/NarrativeProcessor");
-const MermaidRenderer_1 = require("../src/ui/MermaidRenderer");
 const ExportFormats_1 = require("../src/export/ExportFormats");
 const program = new commander_1.Command();
 program
@@ -54,10 +53,8 @@ program
     .description('Process a narrative file and generate ontology')
     .argument('<input>', 'Input narrative file path')
     .option('-o, --output <path>', 'Output directory', './output')
-    .option('-f, --format <format>', 'Export format (json-ld, graphml, mermaid, cytoscape, gexf)', 'json-ld')
+    .option('-f, --format <format>', 'Export format (json-ld, cytoscape, csv)', 'cytoscape')
     .option('--min-confidence <number>', 'Minimum relation confidence', '0.3')
-    .option('--max-nodes <number>', 'Maximum nodes in Mermaid diagram', '50')
-    .option('--include-legend', 'Include legend in Mermaid output')
     .action(async (input, options) => {
     try {
         console.log(chalk_1.default.blue('🔄 Processing narrative...'));
@@ -87,9 +84,6 @@ program
         // Export in requested format(s)
         const formats = options.format.split(',');
         const exporter = new ExportFormats_1.OntologyExporter();
-        const renderer = new MermaidRenderer_1.MermaidRenderer({
-            maxNodes: parseInt(options.maxNodes)
-        });
         for (const format of formats) {
             const baseFileName = path.basename(input, path.extname(input));
             let outputContent;
@@ -99,24 +93,20 @@ program
                     outputContent = JSON.stringify(exporter.toJsonLD(result.ontology), null, 2);
                     fileExtension = 'jsonld';
                     break;
-                case 'graphml':
-                    outputContent = exporter.toGraphML(result.ontology);
-                    fileExtension = 'graphml';
-                    break;
-                case 'mermaid':
-                    outputContent = options.includeLegend ?
-                        renderer.renderWithLegend(result.ontology) :
-                        renderer.renderOntology(result.ontology);
-                    fileExtension = 'mmd';
-                    break;
                 case 'cytoscape':
                     outputContent = JSON.stringify(exporter.toCytoscape(result.ontology), null, 2);
                     fileExtension = 'cytoscape.json';
                     break;
-                case 'gexf':
-                    outputContent = exporter.toGEXF(result.ontology);
-                    fileExtension = 'gexf';
-                    break;
+                case 'csv':
+                    const csvData = exporter.toCSV(result.ontology);
+                    // Write nodes and edges files
+                    const nodesPath = path.join(outputDir, `${baseFileName}-nodes.csv`);
+                    const edgesPath = path.join(outputDir, `${baseFileName}-edges.csv`);
+                    fs.writeFileSync(nodesPath, csvData.nodes);
+                    fs.writeFileSync(edgesPath, csvData.edges);
+                    console.log(chalk_1.default.green(`📄 Exported CSV nodes to: ${nodesPath}`));
+                    console.log(chalk_1.default.green(`📄 Exported CSV edges to: ${edgesPath}`));
+                    continue;
                 default:
                     console.warn(chalk_1.default.yellow(`⚠️  Unknown format: ${format}`));
                     continue;
@@ -133,6 +123,9 @@ program
             stats: result.stats
         }, null, 2));
         console.log(chalk_1.default.gray(`📋 Processing results saved to: ${resultsPath}`));
+        // D3.js visualization guidance
+        console.log(chalk_1.default.cyan('🌐 Open the D3.js visualization in interactive-viz/d3-network-standalone.html'));
+        console.log(chalk_1.default.cyan('📁 Load the .cytoscape.json file for interactive network exploration'));
     }
     catch (error) {
         console.error(chalk_1.default.red('❌ Error processing narrative:'));
@@ -145,7 +138,7 @@ program
     .description('Process multiple narrative files')
     .argument('<input-dir>', 'Input directory containing narrative files')
     .option('-o, --output <path>', 'Output directory', './output')
-    .option('-f, --format <format>', 'Export format (json-ld, graphml, mermaid)', 'json-ld')
+    .option('-f, --format <format>', 'Export format (json-ld, cytoscape, csv)', 'cytoscape')
     .option('--pattern <pattern>', 'File pattern to match', '*.txt')
     .action(async (inputDir, options) => {
     try {
@@ -178,7 +171,6 @@ program
         }
         // Export each result
         const exporter = new ExportFormats_1.OntologyExporter();
-        const renderer = new MermaidRenderer_1.MermaidRenderer();
         for (const result of results) {
             const baseFileName = result.narrative.id;
             switch (options.format) {
@@ -186,13 +178,14 @@ program
                     const jsonLd = JSON.stringify(exporter.toJsonLD(result.ontology), null, 2);
                     fs.writeFileSync(path.join(outputDir, `${baseFileName}.jsonld`), jsonLd);
                     break;
-                case 'graphml':
-                    const graphml = exporter.toGraphML(result.ontology);
-                    fs.writeFileSync(path.join(outputDir, `${baseFileName}.graphml`), graphml);
+                case 'cytoscape':
+                    const cytoscape = JSON.stringify(exporter.toCytoscape(result.ontology), null, 2);
+                    fs.writeFileSync(path.join(outputDir, `${baseFileName}.cytoscape.json`), cytoscape);
                     break;
-                case 'mermaid':
-                    const mermaid = renderer.renderOntology(result.ontology);
-                    fs.writeFileSync(path.join(outputDir, `${baseFileName}.mmd`), mermaid);
+                case 'csv':
+                    const csvData = exporter.toCSV(result.ontology);
+                    fs.writeFileSync(path.join(outputDir, `${baseFileName}-nodes.csv`), csvData.nodes);
+                    fs.writeFileSync(path.join(outputDir, `${baseFileName}-edges.csv`), csvData.edges);
                     break;
             }
         }
@@ -230,10 +223,9 @@ program
         }
         // Export in multiple formats
         const exporter = new ExportFormats_1.OntologyExporter();
-        const renderer = new MermaidRenderer_1.MermaidRenderer();
         const exports = [
+            { format: 'cytoscape', content: JSON.stringify(exporter.toCytoscape(result.ontology), null, 2), ext: 'cytoscape.json' },
             { format: 'json-ld', content: JSON.stringify(exporter.toJsonLD(result.ontology), null, 2), ext: 'jsonld' },
-            { format: 'mermaid', content: renderer.renderWithLegend(result.ontology), ext: 'mmd' },
             { format: 'results', content: JSON.stringify(result, null, 2), ext: 'results.json' }
         ];
         for (const exp of exports) {
@@ -243,6 +235,8 @@ program
         }
         console.log(chalk_1.default.green('✅ Demo complete!'));
         console.log(chalk_1.default.gray(`   📊 Found ${result.stats.entityCount} entities and ${result.stats.relationCount} relations`));
+        console.log(chalk_1.default.cyan('   🌐 Open the D3.js visualization in interactive-viz/d3-network-standalone.html'));
+        console.log(chalk_1.default.cyan('   📁 Load the demo.cytoscape.json file for interactive network exploration'));
     }
     catch (error) {
         console.error(chalk_1.default.red('❌ Demo failed:'));

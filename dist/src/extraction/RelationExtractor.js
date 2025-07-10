@@ -44,8 +44,6 @@ class RelationExtractor {
     extractRelations(text, entities) {
         const relations = [];
         const allPatterns = [...this.defaultPatterns, ...(this.options.customPatterns || [])];
-        // Create entity position map
-        const entityPositions = this.createEntityPositionMap(entities);
         // Process text with NLP
         const doc = (0, compromise_1.default)(text);
         const sentences = doc.sentences().json();

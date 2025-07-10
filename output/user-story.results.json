@@ -1,10 +1,10 @@
 {
   "narrative": {
-    "id": "narrative-1751985419314-3ibihlr8d",
+    "id": "narrative-1752016842368-hgkri0iya",
     "text": "Last quarter, we focused heavily on improving the onboarding experience, especially with the rollout of the new AI-powered insights. While working through the Q3 growth efforts, the team aligned around the idea that customers in the mid-sized B2B SaaS space were still struggling to see value quickly. One of the key ideas that emerged was to reduce the time it takes to resolve tickets and encourage greater use of self-service options.\n\nThroughout the process, we kept hearing the same thing: customers want to feel heard and supported. So we anchored our efforts around a belief in customer-first decision making and a principle of iterate and validate before scaling. We set an internal aim to improve our responsiveness and to reach 10,000 monthly active users by the end of the quarter. We're also targeting a reduction in churn and aiming for near-perfect uptime. These efforts play into our broader goal to expand into the mid-market and continue increasing satisfaction for enterprise clients in",
     "entities": [
       {
-        "id": "entity-1751985419451-yh5qldt8g",
+        "id": "entity-1752016842533-y0g0p0yay",
         "text": "a belief in customer-first decision",
         "spans": [
           {
@@ -14,16 +14,16 @@
           }
         ],
         "classification": {
-          "type": "stakeholder",
-          "confidence": 0.07692307692307693,
+          "type": "principle",
+          "confidence": 0.09090909090909091,
           "metadata": {
-            "taxonomyClass": "Stakeholder",
-            "description": "People, teams, and organizations involved"
+            "taxonomyClass": "Principle",
+            "description": "Guiding values, beliefs, and methodological approaches"
           }
         }
       },
       {
-        "id": "entity-1751985419452-d1jy2w7sk",
+        "id": "entity-1752016842533-tbfria6t8",
         "text": "10,000 monthly active users",
         "spans": [
           {
@@ -34,15 +34,15 @@
         ],
         "classification": {
           "type": "time-period",
-          "confidence": 0.047619047619047616,
+          "confidence": 0.045454545454545456,
           "metadata": {
-            "taxonomyClass": "TimePeriod",
+            "taxonomyClass": "Time Period",
             "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
           }
         }
       },
       {
-        "id": "entity-1751985419450-4mwc9ibc3",
+        "id": "entity-1752016842530-p6f0ek007",
         "text": "the onboarding experience,",
         "spans": [
           {
@@ -53,7 +53,7 @@
         ]
       },
       {
-        "id": "entity-1751985419452-zv0mlflmp",
+        "id": "entity-1752016842533-ncudy8aue",
         "text": "the end of the quarter.",
         "spans": [
           {
@@ -64,15 +64,15 @@
         ],
         "classification": {
           "type": "time-period",
-          "confidence": 0.09523809523809523,
+          "confidence": 0.09090909090909091,
           "metadata": {
-            "taxonomyClass": "TimePeriod",
+            "taxonomyClass": "Time Period",
             "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
           }
         }
       },
       {
-        "id": "entity-1751985419451-tt8rm5uke",
+        "id": "entity-1752016842532-7uj401pkh",
         "text": "the Q3 growth efforts,",
         "spans": [
           {
@@ -83,15 +83,15 @@
         ],
         "classification": {
           "type": "time-period",
-          "confidence": 0.09523809523809523,
+          "confidence": 0.09090909090909091,
           "metadata": {
-            "taxonomyClass": "TimePeriod",
+            "taxonomyClass": "Time Period",
             "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
           }
         }
       },
       {
-        "id": "entity-1751985419451-mjvnwb0s5",
+        "id": "entity-1752016842533-jri8ic9ai",
         "text": "a principle of iterate",
         "spans": [
           {
@@ -101,16 +101,16 @@
           }
         ],
         "classification": {
-          "type": "metric",
-          "confidence": 0.07692307692307693,
+          "type": "principle",
+          "confidence": 0.2727272727272727,
           "metadata": {
-            "taxonomyClass": "Metric",
-            "description": "Key performance indicators and measurements"
+            "taxonomyClass": "Principle",
+            "description": "Guiding values, beliefs, and methodological approaches"
           }
         }
       },
       {
-        "id": "entity-1751985419451-a5nohrv2b",
+        "id": "entity-1752016842532-5moicplt0",
         "text": "self-service options.",
         "spans": [
           {
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "id": "entity-1751985419452-43c7zk5ss",
+        "id": "entity-1752016842533-qqpl0i5ie",
         "text": "a reduction in churn",
         "spans": [
           {
@@ -129,10 +129,18 @@
             "end": 834,
             "text": "a reduction in churn"
           }
-        ]
+        ],
+        "classification": {
+          "type": "target",
+          "confidence": 0.2727272727272727,
+          "metadata": {
+            "taxonomyClass": "Target",
+            "description": "Specific measurable targets and metrics to hit"
+          }
+        }
       },
       {
-        "id": "entity-1751985419451-jjgpwiecb",
+        "id": "entity-1752016842533-c8dce52oh",
         "text": "our responsiveness",
         "spans": [
           {
@@ -143,7 +151,7 @@
         ]
       },
       {
-        "id": "entity-1751985419452-v5dg1g8ar",
+        "id": "entity-1752016842533-brwjd5bc7",
         "text": "enterprise clients",
         "spans": [
           {
@@ -153,16 +161,16 @@
           }
         ],
         "classification": {
-          "type": "stakeholder",
+          "type": "customer-segment",
           "confidence": 0.07692307692307693,
           "metadata": {
-            "taxonomyClass": "Stakeholder",
-            "description": "People, teams, and organizations involved"
+            "taxonomyClass": "Customer Segment",
+            "description": "Target audiences, customer groups, and market segments"
           }
         }
       },
       {
-        "id": "entity-1751985419452-h7cgdlwv7",
+        "id": "entity-1752016842533-vaucbxfs9",
         "text": "our broader goal",
         "spans": [
           {
@@ -176,12 +184,12 @@
           "confidence": 0.08333333333333333,
           "metadata": {
             "taxonomyClass": "Goal",
-            "description": "Objectives, targets, and desired states"
+            "description": "Objectives, targets, and desired outcomes to achieve"
           }
         }
       },
       {
-        "id": "entity-1751985419451-05rzygqng",
+        "id": "entity-1752016842532-udvg7xcx4",
         "text": "the same thing:",
         "spans": [
           {
@@ -192,7 +200,7 @@
         ]
       },
       {
-        "id": "entity-1751985419451-28x0js82j",
+        "id": "entity-1752016842533-nutxqtdt1",
         "text": "an internal aim",
         "spans": [
           {
@@ -206,12 +214,12 @@
           "confidence": 0.08333333333333333,
           "metadata": {
             "taxonomyClass": "Goal",
-            "description": "Objectives, targets, and desired states"
+            "description": "Objectives, targets, and desired outcomes to achieve"
           }
         }
       },
       {
-        "id": "entity-1751985419452-isiayfxe6",
+        "id": "entity-1752016842533-kqdmyeenv",
         "text": "perfect uptime.",
         "spans": [
           {
@@ -222,7 +230,7 @@
         ]
       },
       {
-        "id": "entity-1751985419451-5zayydq6r",
+        "id": "entity-1752016842532-exy6f2wer",
         "text": "B2B SaaS space",
         "spans": [
           {
@@ -230,10 +238,18 @@
             "end": 257,
             "text": "B2B SaaS space"
           }
-        ]
+        ],
+        "classification": {
+          "type": "customer-segment",
+          "confidence": 0.15384615384615385,
+          "metadata": {
+            "taxonomyClass": "Customer Segment",
+            "description": "Target audiences, customer groups, and market segments"
+          }
+        }
       },
       {
-        "id": "entity-1751985419448-3l5vdx2vy",
+        "id": "entity-1752016842529-oyeta70io",
         "text": "Last quarter,",
         "spans": [
           {
@@ -244,15 +260,15 @@
         ],
         "classification": {
           "type": "time-period",
-          "confidence": 0.14285714285714285,
+          "confidence": 0.18181818181818182,
           "metadata": {
-            "taxonomyClass": "TimePeriod",
+            "taxonomyClass": "Time Period",
             "description": "Temporal boundaries and timeframes (quarters, years, deadlines)"
           }
         }
       },
       {
-        "id": "entity-1751985419451-u1iyxnein",
+        "id": "entity-1752016842532-wkznwvikc",
         "text": "the key ideas",
         "spans": [
           {
@@ -263,7 +279,7 @@
         ]
       },
       {
-        "id": "entity-1751985419452-orlw4cdge",
+        "id": "entity-1752016842533-q9advge5u",
         "text": "These efforts",
         "spans": [
           {
@@ -273,16 +289,16 @@
           }
         ],
         "classification": {
-          "type": "initiative",
-          "confidence": 0.07692307692307693,
+          "type": "cycle-theme",
+          "confidence": 0.16666666666666666,
           "metadata": {
-            "taxonomyClass": "Initiative",
-            "description": "Strategic programs, projects, and organized efforts"
+            "taxonomyClass": "Cycle Theme",
+            "description": "Recurring themes and seasonal focuses across time periods"
           }
         }
       },
       {
-        "id": "entity-1751985419451-rvacx9k5e",
+        "id": "entity-1752016842532-ol8wfbi7j",
         "text": "the process,",
         "spans": [
           {
@@ -290,18 +306,10 @@
             "end": 462,
             "text": "the process,"
           }
-        ],
-        "classification": {
-          "type": "process",
-          "confidence": 0.18181818181818182,
-          "metadata": {
-            "taxonomyClass": "Process",
-            "description": "Workflows, procedures, and systematic approaches"
-          }
-        }
+        ]
       },
       {
-        "id": "entity-1751985419452-uyh6oi91a",
+        "id": "entity-1752016842533-5hk1trwzq",
         "text": "satisfaction",
         "spans": [
           {
@@ -312,7 +320,7 @@
         ]
       },
       {
-        "id": "entity-1751985419450-65bv4ze4b",
+        "id": "entity-1752016842531-xpxdtft2w",
         "text": "the rollout",
         "spans": [
           {
@@ -322,16 +330,16 @@
           }
         ],
         "classification": {
-          "type": "initiative",
-          "confidence": 0.07692307692307693,
+          "type": "release-launch",
+          "confidence": 0.1,
           "metadata": {
-            "taxonomyClass": "Initiative",
-            "description": "Strategic programs, projects, and organized efforts"
+            "taxonomyClass": "Release Launch",
+            "description": "Product releases, deployments, and launch activities"
           }
         }
       },
       {
-        "id": "entity-1751985419451-l0n2n6j50",
+        "id": "entity-1752016842532-3x3obovnt",
         "text": "our efforts",
         "spans": [
           {
@@ -341,16 +349,16 @@
           }
         ],
         "classification": {
-          "type": "initiative",
-          "confidence": 0.07692307692307693,
+          "type": "cycle-theme",
+          "confidence": 0.16666666666666666,
           "metadata": {
-            "taxonomyClass": "Initiative",
-            "description": "Strategic programs, projects, and organized efforts"
+            "taxonomyClass": "Cycle Theme",
+            "description": "Recurring themes and seasonal focuses across time periods"
           }
         }
       },
       {
-        "id": "entity-1751985419451-jmpgxp6h9",
+        "id": "entity-1752016842532-yl13d1rkt",
         "text": "struggling",
         "spans": [
           {
@@ -361,7 +369,7 @@
         ]
       },
       {
-        "id": "entity-1751985419450-ufckv9a2c",
+        "id": "entity-1752016842531-t3puld45y",
         "text": "insights.",
         "spans": [
           {
@@ -371,16 +379,16 @@
           }
         ],
         "classification": {
-          "type": "insight",
-          "confidence": 0.08333333333333333,
+          "type": "product-capability",
+          "confidence": 0.09090909090909091,
           "metadata": {
-            "taxonomyClass": "Insight",
-            "description": "Learnings, discoveries, and key findings"
+            "taxonomyClass": "Product Capability",
+            "description": "Features, tools, and functional capabilities of the product"
           }
         }
       },
       {
-        "id": "entity-1751985419451-nlyb9y6i7",
+        "id": "entity-1752016842532-le8s2nwzg",
         "text": "customers",
         "spans": [
           {
@@ -395,16 +403,16 @@
           }
         ],
         "classification": {
-          "type": "stakeholder",
+          "type": "customer-segment",
           "confidence": 0.07692307692307693,
           "metadata": {
-            "taxonomyClass": "Stakeholder",
-            "description": "People, teams, and organizations involved"
+            "taxonomyClass": "Customer Segment",
+            "description": "Target audiences, customer groups, and market segments"
           }
         }
       },
       {
-        "id": "entity-1751985419451-4loktelen",
+        "id": "entity-1752016842532-sk1ejwoxa",
         "text": "the team",
         "spans": [
           {
@@ -412,18 +420,10 @@
             "end": 186,
             "text": "the team"
           }
-        ],
-        "classification": {
-          "type": "stakeholder",
-          "confidence": 0.15384615384615385,
-          "metadata": {
-            "taxonomyClass": "Stakeholder",
-            "description": "People, teams, and organizations involved"
-          }
-        }
+        ]
       },
       {
-        "id": "entity-1751985419451-88y1t87kp",
+        "id": "entity-1752016842532-slrd9u7re",
         "text": "the idea",
         "spans": [
           {
@@ -434,7 +434,7 @@
         ]
       },
       {
-        "id": "entity-1751985419451-7e7wurcm2",
+        "id": "entity-1752016842532-y8dwxrsav",
         "text": "the time",
         "spans": [
           {
@@ -445,7 +445,7 @@
         ]
       },
       {
-        "id": "entity-1751985419451-hl9cdikpe",
+        "id": "entity-1752016842532-o1kc63jzy",
         "text": "tickets",
         "spans": [
           {
@@ -456,7 +456,7 @@
         ]
       },
       {
-        "id": "entity-1751985419451-frdjih2mz",
+        "id": "entity-1752016842532-jh7adts3i",
         "text": "value",
         "spans": [
           {
@@ -467,15 +467,15 @@
         ],
         "classification": {
           "type": "principle",
-          "confidence": 0.08333333333333333,
+          "confidence": 0.09090909090909091,
           "metadata": {
             "taxonomyClass": "Principle",
-            "description": "Guiding values, beliefs, and strategic directions"
+            "description": "Guiding values, beliefs, and methodological approaches"
           }
         }
       },
       {
-        "id": "entity-1751985419452-ycolypa54",
+        "id": "entity-1752016842533-xioh5nqcp",
         "text": "We're",
         "spans": [
           {
@@ -488,9 +488,9 @@
     ],
     "relations": [
       {
-        "id": "relation-1751985419493-39u09mxq1",
-        "sourceEntityId": "entity-1751985419450-4mwc9ibc3",
-        "targetEntityId": "entity-1751985419450-65bv4ze4b",
+        "id": "relation-1752016842582-0l3uj5yue",
+        "sourceEntityId": "entity-1752016842530-p6f0ek007",
+        "targetEntityId": "entity-1752016842531-xpxdtft2w",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -500,9 +500,9 @@
         }
       },
       {
-        "id": "relation-1751985419493-5irartday",
-        "sourceEntityId": "entity-1751985419450-4mwc9ibc3",
-        "targetEntityId": "entity-1751985419450-ufckv9a2c",
+        "id": "relation-1752016842582-6yfj337pi",
+        "sourceEntityId": "entity-1752016842530-p6f0ek007",
+        "targetEntityId": "entity-1752016842531-t3puld45y",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -512,9 +512,9 @@
         }
       },
       {
-        "id": "relation-1751985419493-2qf93gxj7",
-        "sourceEntityId": "entity-1751985419448-3l5vdx2vy",
-        "targetEntityId": "entity-1751985419450-65bv4ze4b",
+        "id": "relation-1752016842582-ws26p7nwv",
+        "sourceEntityId": "entity-1752016842529-oyeta70io",
+        "targetEntityId": "entity-1752016842531-xpxdtft2w",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -524,9 +524,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-c8llbbwba",
-        "sourceEntityId": "entity-1751985419451-tt8rm5uke",
-        "targetEntityId": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842582-uip5llytk",
+        "sourceEntityId": "entity-1752016842532-7uj401pkh",
+        "targetEntityId": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -536,9 +536,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-6ftexpas8",
-        "sourceEntityId": "entity-1751985419451-nlyb9y6i7",
-        "targetEntityId": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842583-zsgqjp5np",
+        "sourceEntityId": "entity-1752016842532-le8s2nwzg",
+        "targetEntityId": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "confidence": 0.8,
         "metadata": {
@@ -548,9 +548,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-f1hf45392",
-        "sourceEntityId": "entity-1751985419451-4loktelen",
-        "targetEntityId": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842583-xny8asoie",
+        "sourceEntityId": "entity-1752016842532-sk1ejwoxa",
+        "targetEntityId": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -560,9 +560,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-x2jwlkwme",
-        "sourceEntityId": "entity-1751985419451-88y1t87kp",
-        "targetEntityId": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842583-x2b7phtjd",
+        "sourceEntityId": "entity-1752016842532-slrd9u7re",
+        "targetEntityId": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "confidence": 0.8,
         "metadata": {
@@ -572,9 +572,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-er1s15qde",
-        "sourceEntityId": "entity-1751985419451-nlyb9y6i7",
-        "targetEntityId": "entity-1751985419451-jmpgxp6h9",
+        "id": "relation-1752016842583-xw8qgdrlk",
+        "sourceEntityId": "entity-1752016842532-le8s2nwzg",
+        "targetEntityId": "entity-1752016842532-yl13d1rkt",
         "label": "occurs_during",
         "confidence": 0.8,
         "metadata": {
@@ -584,9 +584,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3mbbszo3g",
-        "sourceEntityId": "entity-1751985419451-4loktelen",
-        "targetEntityId": "entity-1751985419451-jmpgxp6h9",
+        "id": "relation-1752016842583-foo1vsrn8",
+        "sourceEntityId": "entity-1752016842532-sk1ejwoxa",
+        "targetEntityId": "entity-1752016842532-yl13d1rkt",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -596,9 +596,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-8lu0jw1b1",
-        "sourceEntityId": "entity-1751985419451-88y1t87kp",
-        "targetEntityId": "entity-1751985419451-jmpgxp6h9",
+        "id": "relation-1752016842583-o3eor901b",
+        "sourceEntityId": "entity-1752016842532-slrd9u7re",
+        "targetEntityId": "entity-1752016842532-yl13d1rkt",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -608,9 +608,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-cwqrfeq0v",
-        "sourceEntityId": "entity-1751985419451-nlyb9y6i7",
-        "targetEntityId": "entity-1751985419451-frdjih2mz",
+        "id": "relation-1752016842583-rwp9eie5l",
+        "sourceEntityId": "entity-1752016842532-le8s2nwzg",
+        "targetEntityId": "entity-1752016842532-jh7adts3i",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -620,9 +620,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-ghgri1dci",
-        "sourceEntityId": "entity-1751985419451-88y1t87kp",
-        "targetEntityId": "entity-1751985419451-frdjih2mz",
+        "id": "relation-1752016842583-7uf7w9qas",
+        "sourceEntityId": "entity-1752016842532-slrd9u7re",
+        "targetEntityId": "entity-1752016842532-jh7adts3i",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -632,9 +632,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3d1lku02s",
-        "sourceEntityId": "entity-1751985419451-7e7wurcm2",
-        "targetEntityId": "entity-1751985419451-a5nohrv2b",
+        "id": "relation-1752016842583-m6j8xb0q2",
+        "sourceEntityId": "entity-1752016842532-y8dwxrsav",
+        "targetEntityId": "entity-1752016842532-5moicplt0",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -644,9 +644,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-sl2pym3d7",
-        "sourceEntityId": "entity-1751985419451-hl9cdikpe",
-        "targetEntityId": "entity-1751985419451-a5nohrv2b",
+        "id": "relation-1752016842583-yljxbzsgb",
+        "sourceEntityId": "entity-1752016842532-o1kc63jzy",
+        "targetEntityId": "entity-1752016842532-5moicplt0",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -656,9 +656,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3koty8g84",
-        "sourceEntityId": "entity-1751985419451-yh5qldt8g",
-        "targetEntityId": "entity-1751985419451-mjvnwb0s5",
+        "id": "relation-1752016842583-aj8y64j75",
+        "sourceEntityId": "entity-1752016842533-y0g0p0yay",
+        "targetEntityId": "entity-1752016842533-jri8ic9ai",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -668,9 +668,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-tb8gmthvq",
-        "sourceEntityId": "entity-1751985419451-l0n2n6j50",
-        "targetEntityId": "entity-1751985419451-mjvnwb0s5",
+        "id": "relation-1752016842583-896ofo5dw",
+        "sourceEntityId": "entity-1752016842532-3x3obovnt",
+        "targetEntityId": "entity-1752016842533-jri8ic9ai",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -680,9 +680,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-eeoy4ig0j",
-        "sourceEntityId": "entity-1751985419451-l0n2n6j50",
-        "targetEntityId": "entity-1751985419451-mjvnwb0s5",
+        "id": "relation-1752016842583-03vpcz60o",
+        "sourceEntityId": "entity-1752016842532-3x3obovnt",
+        "targetEntityId": "entity-1752016842533-jri8ic9ai",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -692,9 +692,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-9cm513rtp",
-        "sourceEntityId": "entity-1751985419451-jjgpwiecb",
-        "targetEntityId": "entity-1751985419452-d1jy2w7sk",
+        "id": "relation-1752016842583-grxy9eewb",
+        "sourceEntityId": "entity-1752016842533-c8dce52oh",
+        "targetEntityId": "entity-1752016842533-tbfria6t8",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -704,9 +704,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-moq4qhbv2",
-        "sourceEntityId": "entity-1751985419451-28x0js82j",
-        "targetEntityId": "entity-1751985419452-d1jy2w7sk",
+        "id": "relation-1752016842583-29nhu24y7",
+        "sourceEntityId": "entity-1752016842533-nutxqtdt1",
+        "targetEntityId": "entity-1752016842533-tbfria6t8",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -716,9 +716,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-k9yconfpw",
-        "sourceEntityId": "entity-1751985419451-jjgpwiecb",
-        "targetEntityId": "entity-1751985419452-zv0mlflmp",
+        "id": "relation-1752016842583-d3ouj0xwa",
+        "sourceEntityId": "entity-1752016842533-c8dce52oh",
+        "targetEntityId": "entity-1752016842533-ncudy8aue",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -728,9 +728,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-vai10x6aa",
-        "sourceEntityId": "entity-1751985419451-28x0js82j",
-        "targetEntityId": "entity-1751985419452-zv0mlflmp",
+        "id": "relation-1752016842583-9zv41506q",
+        "sourceEntityId": "entity-1752016842533-nutxqtdt1",
+        "targetEntityId": "entity-1752016842533-ncudy8aue",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -740,9 +740,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3dgvf9hwd",
-        "sourceEntityId": "entity-1751985419452-43c7zk5ss",
-        "targetEntityId": "entity-1751985419452-isiayfxe6",
+        "id": "relation-1752016842583-jgh77yj2h",
+        "sourceEntityId": "entity-1752016842533-qqpl0i5ie",
+        "targetEntityId": "entity-1752016842533-kqdmyeenv",
         "label": "associated_with",
         "confidence": 0.4,
         "metadata": {
@@ -752,9 +752,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-2ciiwo5kl",
-        "sourceEntityId": "entity-1751985419452-ycolypa54",
-        "targetEntityId": "entity-1751985419452-isiayfxe6",
+        "id": "relation-1752016842583-gmgb4eg9x",
+        "sourceEntityId": "entity-1752016842533-xioh5nqcp",
+        "targetEntityId": "entity-1752016842533-kqdmyeenv",
         "label": "occurs_during",
         "confidence": 0.7200000000000001,
         "metadata": {
@@ -764,9 +764,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-u1ea2mhyq",
-        "sourceEntityId": "entity-1751985419452-ycolypa54",
-        "targetEntityId": "entity-1751985419452-isiayfxe6",
+        "id": "relation-1752016842583-g6uzanc4i",
+        "sourceEntityId": "entity-1752016842533-xioh5nqcp",
+        "targetEntityId": "entity-1752016842533-kqdmyeenv",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -776,9 +776,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-qlpr7ov42",
-        "sourceEntityId": "entity-1751985419452-h7cgdlwv7",
-        "targetEntityId": "entity-1751985419452-v5dg1g8ar",
+        "id": "relation-1752016842583-wc0h1opbu",
+        "sourceEntityId": "entity-1752016842533-vaucbxfs9",
+        "targetEntityId": "entity-1752016842533-brwjd5bc7",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -788,9 +788,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-xb2vtzgdt",
-        "sourceEntityId": "entity-1751985419452-h7cgdlwv7",
-        "targetEntityId": "entity-1751985419452-uyh6oi91a",
+        "id": "relation-1752016842583-h37d1rb7c",
+        "sourceEntityId": "entity-1752016842533-vaucbxfs9",
+        "targetEntityId": "entity-1752016842533-5hk1trwzq",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -800,9 +800,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-i80uw3cfy",
-        "sourceEntityId": "entity-1751985419452-orlw4cdge",
-        "targetEntityId": "entity-1751985419452-uyh6oi91a",
+        "id": "relation-1752016842583-1wqa6fny5",
+        "sourceEntityId": "entity-1752016842533-q9advge5u",
+        "targetEntityId": "entity-1752016842533-5hk1trwzq",
         "label": "associated_with",
         "confidence": 0.36000000000000004,
         "metadata": {
@@ -812,16 +812,16 @@
         }
       }
     ],
-    "createdAt": "2025-07-08T14:36:59.314Z",
-    "updatedAt": "2025-07-08T14:36:59.494Z"
+    "createdAt": "2025-07-08T23:20:42.368Z",
+    "updatedAt": "2025-07-08T23:20:42.583Z"
   },
   "ontology": {
-    "id": "ontology-1751985419494-4ll3aw1nk",
+    "id": "ontology-1752016842583-loffk6wg9",
     "nodes": [
       {
-        "id": "entity-1751985419451-yh5qldt8g",
+        "id": "entity-1752016842533-y0g0p0yay",
         "label": "a belief in customer-first decision",
-        "type": "stakeholder",
+        "type": "principle",
         "attributes": {
           "originalSpans": [
             {
@@ -830,11 +830,11 @@
               "text": "a belief in customer-first decision"
             }
           ],
-          "confidence": 0.07692307692307693
+          "confidence": 0.09090909090909091
         }
       },
       {
-        "id": "entity-1751985419452-d1jy2w7sk",
+        "id": "entity-1752016842533-tbfria6t8",
         "label": "10,000 monthly active users",
         "type": "time-period",
         "attributes": {
@@ -845,11 +845,11 @@
               "text": "10,000 monthly active users"
             }
           ],
-          "confidence": 0.047619047619047616
+          "confidence": 0.045454545454545456
         }
       },
       {
-        "id": "entity-1751985419450-4mwc9ibc3",
+        "id": "entity-1752016842530-p6f0ek007",
         "label": "the onboarding experience,",
         "type": "Entity",
         "attributes": {
@@ -863,7 +863,7 @@
         }
       },
       {
-        "id": "entity-1751985419452-zv0mlflmp",
+        "id": "entity-1752016842533-ncudy8aue",
         "label": "the end of the quarter.",
         "type": "time-period",
         "attributes": {
@@ -874,11 +874,11 @@
               "text": "the end of the quarter."
             }
           ],
-          "confidence": 0.09523809523809523
+          "confidence": 0.09090909090909091
         }
       },
       {
-        "id": "entity-1751985419451-tt8rm5uke",
+        "id": "entity-1752016842532-7uj401pkh",
         "label": "the Q3 growth efforts,",
         "type": "time-period",
         "attributes": {
@@ -889,13 +889,13 @@
               "text": "the Q3 growth efforts,"
             }
           ],
-          "confidence": 0.09523809523809523
+          "confidence": 0.09090909090909091
         }
       },
       {
-        "id": "entity-1751985419451-mjvnwb0s5",
+        "id": "entity-1752016842533-jri8ic9ai",
         "label": "a principle of iterate",
-        "type": "metric",
+        "type": "principle",
         "attributes": {
           "originalSpans": [
             {
@@ -904,11 +904,11 @@
               "text": "a principle of iterate"
             }
           ],
-          "confidence": 0.07692307692307693
+          "confidence": 0.2727272727272727
         }
       },
       {
-        "id": "entity-1751985419451-a5nohrv2b",
+        "id": "entity-1752016842532-5moicplt0",
         "label": "self-service options.",
         "type": "Entity",
         "attributes": {
@@ -922,9 +922,9 @@
         }
       },
       {
-        "id": "entity-1751985419452-43c7zk5ss",
+        "id": "entity-1752016842533-qqpl0i5ie",
         "label": "a reduction in churn",
-        "type": "Entity",
+        "type": "target",
         "attributes": {
           "originalSpans": [
             {
@@ -932,11 +932,12 @@
               "end": 834,
               "text": "a reduction in churn"
             }
-          ]
+          ],
+          "confidence": 0.2727272727272727
         }
       },
       {
-        "id": "entity-1751985419451-jjgpwiecb",
+        "id": "entity-1752016842533-c8dce52oh",
         "label": "our responsiveness",
         "type": "Entity",
         "attributes": {
@@ -950,9 +951,9 @@
         }
       },
       {
-        "id": "entity-1751985419452-v5dg1g8ar",
+        "id": "entity-1752016842533-brwjd5bc7",
         "label": "enterprise clients",
-        "type": "stakeholder",
+        "type": "customer-segment",
         "attributes": {
           "originalSpans": [
             {
@@ -965,7 +966,7 @@
         }
       },
       {
-        "id": "entity-1751985419452-h7cgdlwv7",
+        "id": "entity-1752016842533-vaucbxfs9",
         "label": "our broader goal",
         "type": "goal",
         "attributes": {
@@ -980,7 +981,7 @@
         }
       },
       {
-        "id": "entity-1751985419451-05rzygqng",
+        "id": "entity-1752016842532-udvg7xcx4",
         "label": "the same thing:",
         "type": "Entity",
         "attributes": {
@@ -994,7 +995,7 @@
         }
       },
       {
-        "id": "entity-1751985419451-28x0js82j",
+        "id": "entity-1752016842533-nutxqtdt1",
         "label": "an internal aim",
         "type": "goal",
         "attributes": {
@@ -1009,7 +1010,7 @@
         }
       },
       {
-        "id": "entity-1751985419452-isiayfxe6",
+        "id": "entity-1752016842533-kqdmyeenv",
         "label": "perfect uptime.",
         "type": "Entity",
         "attributes": {
@@ -1023,9 +1024,9 @@
         }
       },
       {
-        "id": "entity-1751985419451-5zayydq6r",
+        "id": "entity-1752016842532-exy6f2wer",
         "label": "B2B SaaS space",
-        "type": "Entity",
+        "type": "customer-segment",
         "attributes": {
           "originalSpans": [
             {
@@ -1033,11 +1034,12 @@
               "end": 257,
               "text": "B2B SaaS space"
             }
-          ]
+          ],
+          "confidence": 0.15384615384615385
         }
       },
       {
-        "id": "entity-1751985419448-3l5vdx2vy",
+        "id": "entity-1752016842529-oyeta70io",
         "label": "Last quarter,",
         "type": "time-period",
         "attributes": {
@@ -1048,11 +1050,11 @@
               "text": "Last quarter,"
             }
           ],
-          "confidence": 0.14285714285714285
+          "confidence": 0.18181818181818182
         }
       },
       {
-        "id": "entity-1751985419451-u1iyxnein",
+        "id": "entity-1752016842532-wkznwvikc",
         "label": "the key ideas",
         "type": "Entity",
         "attributes": {
@@ -1066,9 +1068,9 @@
         }
       },
       {
-        "id": "entity-1751985419452-orlw4cdge",
+        "id": "entity-1752016842533-q9advge5u",
         "label": "These efforts",
-        "type": "initiative",
+        "type": "cycle-theme",
         "attributes": {
           "originalSpans": [
             {
@@ -1077,13 +1079,13 @@
               "text": "These efforts"
             }
           ],
-          "confidence": 0.07692307692307693
+          "confidence": 0.16666666666666666
         }
       },
       {
-        "id": "entity-1751985419451-rvacx9k5e",
+        "id": "entity-1752016842532-ol8wfbi7j",
         "label": "the process,",
-        "type": "process",
+        "type": "Entity",
         "attributes": {
           "originalSpans": [
             {
@@ -1091,12 +1093,11 @@
               "end": 462,
               "text": "the process,"
             }
-          ],
-          "confidence": 0.18181818181818182
+          ]
         }
       },
       {
-        "id": "entity-1751985419452-uyh6oi91a",
+        "id": "entity-1752016842533-5hk1trwzq",
         "label": "satisfaction",
         "type": "Entity",
         "attributes": {
@@ -1110,9 +1111,9 @@
         }
       },
       {
-        "id": "entity-1751985419450-65bv4ze4b",
+        "id": "entity-1752016842531-xpxdtft2w",
         "label": "the rollout",
-        "type": "initiative",
+        "type": "release-launch",
         "attributes": {
           "originalSpans": [
             {
@@ -1121,13 +1122,13 @@
               "text": "the rollout"
             }
           ],
-          "confidence": 0.07692307692307693
+          "confidence": 0.1
         }
       },
       {
-        "id": "entity-1751985419451-l0n2n6j50",
+        "id": "entity-1752016842532-3x3obovnt",
         "label": "our efforts",
-        "type": "initiative",
+        "type": "cycle-theme",
         "attributes": {
           "originalSpans": [
             {
@@ -1136,11 +1137,11 @@
               "text": "our efforts"
             }
           ],
-          "confidence": 0.07692307692307693
+          "confidence": 0.16666666666666666
         }
       },
       {
-        "id": "entity-1751985419451-jmpgxp6h9",
+        "id": "entity-1752016842532-yl13d1rkt",
         "label": "struggling",
         "type": "Entity",
         "attributes": {
@@ -1154,9 +1155,9 @@
         }
       },
       {
-        "id": "entity-1751985419450-ufckv9a2c",
+        "id": "entity-1752016842531-t3puld45y",
         "label": "insights.",
-        "type": "insight",
+        "type": "product-capability",
         "attributes": {
           "originalSpans": [
             {
@@ -1165,13 +1166,13 @@
               "text": "insights."
             }
           ],
-          "confidence": 0.08333333333333333
+          "confidence": 0.09090909090909091
         }
       },
       {
-        "id": "entity-1751985419451-nlyb9y6i7",
+        "id": "entity-1752016842532-le8s2nwzg",
         "label": "customers",
-        "type": "stakeholder",
+        "type": "customer-segment",
         "attributes": {
           "originalSpans": [
             {
@@ -1189,9 +1190,9 @@
         }
       },
       {
-        "id": "entity-1751985419451-4loktelen",
+        "id": "entity-1752016842532-sk1ejwoxa",
         "label": "the team",
-        "type": "stakeholder",
+        "type": "Entity",
         "attributes": {
           "originalSpans": [
             {
@@ -1199,12 +1200,11 @@
               "end": 186,
               "text": "the team"
             }
-          ],
-          "confidence": 0.15384615384615385
+          ]
         }
       },
       {
-        "id": "entity-1751985419451-88y1t87kp",
+        "id": "entity-1752016842532-slrd9u7re",
         "label": "the idea",
         "type": "Entity",
         "attributes": {
@@ -1218,7 +1218,7 @@
         }
       },
       {
-        "id": "entity-1751985419451-7e7wurcm2",
+        "id": "entity-1752016842532-y8dwxrsav",
         "label": "the time",
         "type": "Entity",
         "attributes": {
@@ -1232,7 +1232,7 @@
         }
       },
       {
-        "id": "entity-1751985419451-hl9cdikpe",
+        "id": "entity-1752016842532-o1kc63jzy",
         "label": "tickets",
         "type": "Entity",
         "attributes": {
@@ -1246,7 +1246,7 @@
         }
       },
       {
-        "id": "entity-1751985419451-frdjih2mz",
+        "id": "entity-1752016842532-jh7adts3i",
         "label": "value",
         "type": "principle",
         "attributes": {
@@ -1257,11 +1257,11 @@
               "text": "value"
             }
           ],
-          "confidence": 0.08333333333333333
+          "confidence": 0.09090909090909091
         }
       },
       {
-        "id": "entity-1751985419452-ycolypa54",
+        "id": "entity-1752016842533-xioh5nqcp",
         "label": "We're",
         "type": "Entity",
         "attributes": {
@@ -1277,9 +1277,9 @@
     ],
     "edges": [
       {
-        "id": "relation-1751985419493-39u09mxq1",
-        "source": "entity-1751985419450-4mwc9ibc3",
-        "target": "entity-1751985419450-65bv4ze4b",
+        "id": "relation-1752016842582-0l3uj5yue",
+        "source": "entity-1752016842530-p6f0ek007",
+        "target": "entity-1752016842531-xpxdtft2w",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1289,9 +1289,9 @@
         }
       },
       {
-        "id": "relation-1751985419493-5irartday",
-        "source": "entity-1751985419450-4mwc9ibc3",
-        "target": "entity-1751985419450-ufckv9a2c",
+        "id": "relation-1752016842582-6yfj337pi",
+        "source": "entity-1752016842530-p6f0ek007",
+        "target": "entity-1752016842531-t3puld45y",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1301,9 +1301,9 @@
         }
       },
       {
-        "id": "relation-1751985419493-2qf93gxj7",
-        "source": "entity-1751985419448-3l5vdx2vy",
-        "target": "entity-1751985419450-65bv4ze4b",
+        "id": "relation-1752016842582-ws26p7nwv",
+        "source": "entity-1752016842529-oyeta70io",
+        "target": "entity-1752016842531-xpxdtft2w",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1313,9 +1313,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-c8llbbwba",
-        "source": "entity-1751985419451-tt8rm5uke",
-        "target": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842582-uip5llytk",
+        "source": "entity-1752016842532-7uj401pkh",
+        "target": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1325,9 +1325,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-6ftexpas8",
-        "source": "entity-1751985419451-nlyb9y6i7",
-        "target": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842583-zsgqjp5np",
+        "source": "entity-1752016842532-le8s2nwzg",
+        "target": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.8,
@@ -1337,9 +1337,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-f1hf45392",
-        "source": "entity-1751985419451-4loktelen",
-        "target": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842583-xny8asoie",
+        "source": "entity-1752016842532-sk1ejwoxa",
+        "target": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1349,9 +1349,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-x2jwlkwme",
-        "source": "entity-1751985419451-88y1t87kp",
-        "target": "entity-1751985419451-5zayydq6r",
+        "id": "relation-1752016842583-x2b7phtjd",
+        "source": "entity-1752016842532-slrd9u7re",
+        "target": "entity-1752016842532-exy6f2wer",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.8,
@@ -1361,9 +1361,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-er1s15qde",
-        "source": "entity-1751985419451-nlyb9y6i7",
-        "target": "entity-1751985419451-jmpgxp6h9",
+        "id": "relation-1752016842583-xw8qgdrlk",
+        "source": "entity-1752016842532-le8s2nwzg",
+        "target": "entity-1752016842532-yl13d1rkt",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.8,
@@ -1373,9 +1373,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3mbbszo3g",
-        "source": "entity-1751985419451-4loktelen",
-        "target": "entity-1751985419451-jmpgxp6h9",
+        "id": "relation-1752016842583-foo1vsrn8",
+        "source": "entity-1752016842532-sk1ejwoxa",
+        "target": "entity-1752016842532-yl13d1rkt",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1385,9 +1385,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-8lu0jw1b1",
-        "source": "entity-1751985419451-88y1t87kp",
-        "target": "entity-1751985419451-jmpgxp6h9",
+        "id": "relation-1752016842583-o3eor901b",
+        "source": "entity-1752016842532-slrd9u7re",
+        "target": "entity-1752016842532-yl13d1rkt",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1397,9 +1397,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-cwqrfeq0v",
-        "source": "entity-1751985419451-nlyb9y6i7",
-        "target": "entity-1751985419451-frdjih2mz",
+        "id": "relation-1752016842583-rwp9eie5l",
+        "source": "entity-1752016842532-le8s2nwzg",
+        "target": "entity-1752016842532-jh7adts3i",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1409,9 +1409,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-ghgri1dci",
-        "source": "entity-1751985419451-88y1t87kp",
-        "target": "entity-1751985419451-frdjih2mz",
+        "id": "relation-1752016842583-7uf7w9qas",
+        "source": "entity-1752016842532-slrd9u7re",
+        "target": "entity-1752016842532-jh7adts3i",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1421,9 +1421,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3d1lku02s",
-        "source": "entity-1751985419451-7e7wurcm2",
-        "target": "entity-1751985419451-a5nohrv2b",
+        "id": "relation-1752016842583-m6j8xb0q2",
+        "source": "entity-1752016842532-y8dwxrsav",
+        "target": "entity-1752016842532-5moicplt0",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1433,9 +1433,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-sl2pym3d7",
-        "source": "entity-1751985419451-hl9cdikpe",
-        "target": "entity-1751985419451-a5nohrv2b",
+        "id": "relation-1752016842583-yljxbzsgb",
+        "source": "entity-1752016842532-o1kc63jzy",
+        "target": "entity-1752016842532-5moicplt0",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1445,9 +1445,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3koty8g84",
-        "source": "entity-1751985419451-yh5qldt8g",
-        "target": "entity-1751985419451-mjvnwb0s5",
+        "id": "relation-1752016842583-aj8y64j75",
+        "source": "entity-1752016842533-y0g0p0yay",
+        "target": "entity-1752016842533-jri8ic9ai",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1457,9 +1457,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-tb8gmthvq",
-        "source": "entity-1751985419451-l0n2n6j50",
-        "target": "entity-1751985419451-mjvnwb0s5",
+        "id": "relation-1752016842583-896ofo5dw",
+        "source": "entity-1752016842532-3x3obovnt",
+        "target": "entity-1752016842533-jri8ic9ai",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1469,9 +1469,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-eeoy4ig0j",
-        "source": "entity-1751985419451-l0n2n6j50",
-        "target": "entity-1751985419451-mjvnwb0s5",
+        "id": "relation-1752016842583-03vpcz60o",
+        "source": "entity-1752016842532-3x3obovnt",
+        "target": "entity-1752016842533-jri8ic9ai",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1481,9 +1481,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-9cm513rtp",
-        "source": "entity-1751985419451-jjgpwiecb",
-        "target": "entity-1751985419452-d1jy2w7sk",
+        "id": "relation-1752016842583-grxy9eewb",
+        "source": "entity-1752016842533-c8dce52oh",
+        "target": "entity-1752016842533-tbfria6t8",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1493,9 +1493,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-moq4qhbv2",
-        "source": "entity-1751985419451-28x0js82j",
-        "target": "entity-1751985419452-d1jy2w7sk",
+        "id": "relation-1752016842583-29nhu24y7",
+        "source": "entity-1752016842533-nutxqtdt1",
+        "target": "entity-1752016842533-tbfria6t8",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1505,9 +1505,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-k9yconfpw",
-        "source": "entity-1751985419451-jjgpwiecb",
-        "target": "entity-1751985419452-zv0mlflmp",
+        "id": "relation-1752016842583-d3ouj0xwa",
+        "source": "entity-1752016842533-c8dce52oh",
+        "target": "entity-1752016842533-ncudy8aue",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1517,9 +1517,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-vai10x6aa",
-        "source": "entity-1751985419451-28x0js82j",
-        "target": "entity-1751985419452-zv0mlflmp",
+        "id": "relation-1752016842583-9zv41506q",
+        "source": "entity-1752016842533-nutxqtdt1",
+        "target": "entity-1752016842533-ncudy8aue",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1529,9 +1529,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-3dgvf9hwd",
-        "source": "entity-1751985419452-43c7zk5ss",
-        "target": "entity-1751985419452-isiayfxe6",
+        "id": "relation-1752016842583-jgh77yj2h",
+        "source": "entity-1752016842533-qqpl0i5ie",
+        "target": "entity-1752016842533-kqdmyeenv",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.4,
@@ -1541,9 +1541,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-2ciiwo5kl",
-        "source": "entity-1751985419452-ycolypa54",
-        "target": "entity-1751985419452-isiayfxe6",
+        "id": "relation-1752016842583-gmgb4eg9x",
+        "source": "entity-1752016842533-xioh5nqcp",
+        "target": "entity-1752016842533-kqdmyeenv",
         "label": "occurs_during",
         "attributes": {
           "confidence": 0.7200000000000001,
@@ -1553,9 +1553,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-u1ea2mhyq",
-        "source": "entity-1751985419452-ycolypa54",
-        "target": "entity-1751985419452-isiayfxe6",
+        "id": "relation-1752016842583-g6uzanc4i",
+        "source": "entity-1752016842533-xioh5nqcp",
+        "target": "entity-1752016842533-kqdmyeenv",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1565,9 +1565,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-qlpr7ov42",
-        "source": "entity-1751985419452-h7cgdlwv7",
-        "target": "entity-1751985419452-v5dg1g8ar",
+        "id": "relation-1752016842583-wc0h1opbu",
+        "source": "entity-1752016842533-vaucbxfs9",
+        "target": "entity-1752016842533-brwjd5bc7",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1577,9 +1577,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-xb2vtzgdt",
-        "source": "entity-1751985419452-h7cgdlwv7",
-        "target": "entity-1751985419452-uyh6oi91a",
+        "id": "relation-1752016842583-h37d1rb7c",
+        "source": "entity-1752016842533-vaucbxfs9",
+        "target": "entity-1752016842533-5hk1trwzq",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1589,9 +1589,9 @@
         }
       },
       {
-        "id": "relation-1751985419494-i80uw3cfy",
-        "source": "entity-1751985419452-orlw4cdge",
-        "target": "entity-1751985419452-uyh6oi91a",
+        "id": "relation-1752016842583-1wqa6fny5",
+        "source": "entity-1752016842533-q9advge5u",
+        "target": "entity-1752016842533-5hk1trwzq",
         "label": "associated_with",
         "attributes": {
           "confidence": 0.36000000000000004,
@@ -1602,17 +1602,17 @@
       }
     ],
     "metadata": {
-      "sourceNarrativeId": "narrative-1751985419314-3ibihlr8d",
-      "extractedAt": "2025-07-08T14:36:59.494Z",
+      "sourceNarrativeId": "narrative-1752016842368-hgkri0iya",
+      "extractedAt": "2025-07-08T23:20:42.584Z",
       "entityCount": 31,
       "relationCount": 27
     },
-    "createdAt": "2025-07-08T14:36:59.494Z"
+    "createdAt": "2025-07-08T23:20:42.583Z"
   },
   "stats": {
     "entityCount": 31,
     "relationCount": 27,
-    "processingTime": 180,
+    "processingTime": 216,
     "classificationCoverage": 0.5483870967741935
   }
 }

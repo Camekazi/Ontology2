@@ -2,8 +2,5 @@ export {
   OntologyExporter, 
   JsonLdContext, 
   JsonLdNode, 
-  JsonLdGraph, 
-  GraphMLNode, 
-  GraphMLEdge, 
-  GraphMLDocument 
+  JsonLdGraph
 } from './ExportFormats';
